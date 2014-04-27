@@ -1,5 +1,9 @@
 package Perl6::Analytics::Projects;
 
+use strict;
+use warnings;
+use Carp qw(carp croak verbose);
+
 use JSON::InFile;
 use Git::ClonesManager;
 
