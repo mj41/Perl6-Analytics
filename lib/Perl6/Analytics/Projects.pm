@@ -69,6 +69,18 @@ sub load_base_list {
 	return $projects_info;
 }
 
+sub gcm_obj {
+	my ( $self ) = @_;
+	$self->{gcm_obj} = Git::ClonesManager->new( verbose_level => $self->{vl} )
+		unless $self->{gcm_obj};
+	return $self->{gcm_obj};
+}
+
+sub git_repo_obj {
+	my ( $self, $project_alias, %args ) = @_;
+	return $self->gcm_obj->get_repo_obj( $project_alias, %args );
+}
+
 sub add_p6_modules {
 	my ( $self ) = @_;
 }
