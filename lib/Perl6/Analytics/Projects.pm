@@ -90,7 +90,7 @@ sub save_final {
 
 	my $final_pr_info = $self->projects_final_fpath;
 	print "Saving final projects info to '$final_pr_info'.\n" if $self->{vl} >= 3;
-	JSON::InFile->new(fpath => $final_pr_info, verbose_level => $vl)->save( $self->{pr_info} );
+	JSON::InFile->new(fpath => $final_pr_info, verbose_level => $self->{vl})->save( $self->{pr_info} );
 	return 1;
 }
 
