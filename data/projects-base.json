@@ -1,26 +1,23 @@
 {
    "6model" : {
       "name" : "6model",
-      "repository" : "git://github.com/jnthn/6model.git",
-      "source_url" : "https://github.com/jnthn/6model",
+      "source-url" : "git://github.com/jnthn/6model.git",
       "type" : [
          "others"
       ],
-      "url" : ""
+      "url" : "https://github.com/jnthn/6model"
    },
    "book" : {
       "name" : "Perl 6 Book",
-      "repository" : "git://github.com/perl6/book.git",
-      "source_url" : "https://github.com/perl6/book",
+      "source-url" : "git://github.com/perl6/book.git",
       "type" : [
          "docs"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/book"
    },
    "ecosystem" : {
       "name" : "Perl 6 ecosystem",
-      "repository" : "git://github.com/perl6/ecosystem.git",
-      "source_url" : "https://github.com/perl6/ecosystem/",
+      "source-url" : "git://github.com/perl6/ecosystem.git",
       "type" : [
          "vm"
       ],
@@ -28,8 +25,7 @@
    },
    "moarvm" : {
       "name" : "MoarVM",
-      "repository" : "git://github.com/moarvm/moarvm.git",
-      "source_url" : "https://github.com/moarvm/moarvm",
+      "source-url" : "git://github.com/moarvm/moarvm.git",
       "type" : [
          "vm"
       ],
@@ -37,35 +33,31 @@
    },
    "mu" : {
       "name" : "mu",
-      "repository" : "git://github.com/perl6/mu.git",
-      "source_url" : "https://github.com/perl6/mu",
+      "source-url" : "git://github.com/perl6/mu.git",
       "type" : [
          "others"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/mu"
    },
    "niecza" : {
       "name" : "Niecza",
-      "repository" : "git://github.com/sorear/niecza.git",
-      "source_url" : "https://github.com/sorear/niecza",
+      "source-url" : "git://github.com/sorear/niecza.git",
       "type" : [
          "compiler"
       ],
-      "url" : ""
+      "url" : "https://github.com/sorear/niecza"
    },
    "nqp" : {
       "name" : "NQP",
-      "repository" : "git://github.com/perl6/nqp.git",
-      "source_url" : "https://github.com/perl6/nqp",
+      "source-url" : "git://github.com/perl6/nqp.git",
       "type" : [
          "compiler_part"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/nqp"
    },
    "parrot" : {
       "name" : "Parrot",
-      "repository" : "git://github.com/parrot/parrot.git",
-      "source_url" : "https://github.com/parrot/parrot",
+      "source-url" : "git://github.com/parrot/parrot.git",
       "type" : [
          "vm"
       ],
@@ -73,8 +65,7 @@
    },
    "rakudo" : {
       "name" : "Rakudo",
-      "repository" : "git://github.com/rakudo/rakudo.git",
-      "source_url" : "https://github.com/rakudo/rakudo",
+      "source-url" : "git://github.com/rakudo/rakudo.git",
       "type" : [
          "compiler"
       ],
@@ -82,17 +73,15 @@
    },
    "roast" : {
       "name" : "Perl 6 test suite",
-      "repository" : "git://github.com/perl6/roast.git",
-      "source_url" : "https://github.com/perl6/roast",
+      "source-url" : "git://github.com/perl6/roast.git",
       "type" : [
          "others"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/roast"
    },
    "rosella" : {
       "name" : "Rosella",
-      "repository" : "git://github.com/Whiteknight/Rosella.git",
-      "source_url" : "https://github.com/Whiteknight/Rosella",
+      "source-url" : "git://github.com/Whiteknight/Rosella.git",
       "type" : [
          "parrot_others"
       ],
@@ -100,29 +89,26 @@
    },
    "specs" : {
       "name" : "Perl 6 specs",
-      "repository" : "git://github.com/perl6/specs.git",
-      "source_url" : "https://github.com/perl6/specs",
+      "source-url" : "git://github.com/perl6/specs.git",
       "type" : [
          "docs"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/specs"
    },
    "std" : {
       "name" : "STD",
-      "repository" : "git://github.com/perl6/std.git",
-      "source_url" : "https://github.com/perl6/std",
+      "source-url" : "git://github.com/perl6/std.git",
       "type" : [
          "others"
       ],
-      "url" : ""
+      "url" : "https://github.com/perl6/std"
    },
    "winxed" : {
       "name" : "winxed",
-      "repository" : "git://github.com/NotFound/winxed.git",
-      "source_url" : "https://github.com/NotFound/winxed",
+      "source-url" : "git://github.com/NotFound/winxed.git",
       "type" : [
          "others"
       ],
-      "url" : ""
+      "url" : "https://github.com/NotFound/winxed"
    }
 }
