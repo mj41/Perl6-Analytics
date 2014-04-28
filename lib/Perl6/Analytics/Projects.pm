@@ -4,9 +4,14 @@ use strict;
 use warnings;
 use Carp qw(carp croak verbose);
 
+use base qw(
+	Perl6::Analytics::Base
+	Perl6::Analytics::Role::JSON
+	Perl6::Analytics::Role::ClonesManager
+);
+
 use JSON::XS;
 use JSON::InFile;
-use Git::ClonesManager;
 
 sub new {
 	my ( $class, %args )= @_;
@@ -17,7 +22,7 @@ sub new {
 	bless $self, $class;
 }
 
-sub pr_info {
+sub all_projects_struct {
 	my $self = shift;
 	return $self->{pr_info};
 }
@@ -30,32 +35,6 @@ sub projects_final_fpath {
 	return 'data/projects-final.json';
 }
 
-sub get_ipos_str {
-	my ( $self, $offset ) = @_;
-	$offset //= 0;
-	my $line = (caller(1+$offset))[2] || 'l';
-	my $sub = (caller(2+$offset))[3] || 's';
-	return "$sub($line)";
-}
-
-sub dump {
-	croak "Missing parameter for 'dump'.\n" if scalar @_ < 3;
-	my ( $self, $text, $struct, $offset ) = @_;
-	unless ( $self->{dumper_loaded} ) {
-		require Data::Dumper;
-		$self->{dumper_loaded} = 1;
-	};
-
-	local $Data::Dumper::Indent = 1;
-	local $Data::Dumper::Pad = '';
-	local $Data::Dumper::Terse = 1;
-	local $Data::Dumper::Sortkeys = 1;
-	local $Data::Dumper::Deparse = 1;
-	unless ( $text ) {
-		print Data::Dumper->Dump( [ $struct ] );
-		return;
-	}
-	print $text . ' on ' . $self->get_ipos_str($offset) . ': ' . Data::Dumper->Dump( [ $struct ] );
 }
 
 sub load_base_list {
@@ -70,23 +49,10 @@ sub load_base_list {
 	return $projects_info;
 }
 
-sub gcm_obj {
-	my ( $self ) = @_;
-	$self->{gcm_obj} = Git::ClonesManager->new( verbose_level => $self->{vl} )
-		unless $self->{gcm_obj};
-	return $self->{gcm_obj};
-}
-
-sub git_repo_obj {
-	my ( $self, $project_alias, %args ) = @_;
-	return $self->gcm_obj->get_repo_obj( $project_alias, %args );
-}
-
 sub add_p6_modules {
-	my ( $self ) = @_;
+	my ( $self, %args ) = @_;
+	my $skip_fetch = $args{skip_fetch} // 0;
 
-	my $skip_fetch = 0;
-	$skip_fetch = 1; # speed up debugging a bit
 	my $ecos_alias = 'ecosystem';
 	my $ecos_fpath = 'META.list';
 
@@ -118,7 +84,7 @@ sub add_p6_modules {
 	}
 	$self->dump('modules info parsed from ecosystem list', $mod_base_info ) if $self->{vl} >= 8;
 
-	my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);
+	my $json_obj = $self->json_obj;
 
 	# ToDo - move to data/projects-skip.json
 	my $skip_list = {
@@ -196,7 +162,7 @@ sub run {
 	$args{do_update} //= 1;
 
 	$self->{pr_info} = $self->load_base_list();
-	$self->add_p6_modules();
+	$self->add_p6_modules( %args );
 
 	if ( $args{do_update} ) {
 		$self->save_final();
