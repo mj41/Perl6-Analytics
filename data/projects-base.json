@@ -23,6 +23,14 @@
       ],
       "url" : "http://modules.perl6.org"
    },
+   "features" : {
+      "name" : "Perl 6 features",
+      "source-url" : "git://github.com/perl6/features.git",
+      "type" : [
+         "others"
+      ],
+      "url" : "http://modules.perl6.org"
+   },
    "moarvm" : {
       "name" : "MoarVM",
       "source-url" : "git://github.com/moarvm/moarvm.git",

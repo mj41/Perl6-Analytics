@@ -695,6 +695,14 @@
          "p6-module"
       ]
    },
+   "features" : {
+      "name" : "Perl 6 features",
+      "source-url" : "git://github.com/perl6/features.git",
+      "type" : [
+         "others"
+      ],
+      "url" : "http://modules.perl6.org"
+   },
    "flower" : {
       "description" : "XML Application Languages, including TAL.",
       "name" : "Flower",
