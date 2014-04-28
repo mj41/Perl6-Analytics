@@ -27,6 +27,20 @@ sub all_projects_struct {
 	return $self->{pr_info};
 }
 
+sub project_struct {
+	my ( $self, $project_alias ) = @_;
+	return undef unless exists $self->{pr_info}{$project_alias};
+	return $self->{pr_info}{$project_alias};
+}
+
+sub project_source_url {
+	my ( $self, $project_alias ) = @_;
+	my $struct = $self->project_struct( $project_alias );
+	return undef unless defined $struct;
+	return undef unless exists $struct->{'source-url'};
+	return $struct->{'source-url'};
+}
+
 sub projects_base_fpath {
 	return 'data/projects-base.json';
 }
@@ -35,6 +49,13 @@ sub projects_final_fpath {
 	return 'data/projects-final.json';
 }
 
+sub load_from_cache {
+	my ( $self ) = @_;
+	my $fpath = $self->projects_final_fpath;
+	croak "Cache database '$fpath' not found.\n" unless -f $fpath;
+	my $projects_db = JSON::InFile->new(fpath => $fpath, verbose_level => $self->{vl});
+	$self->{pr_info} = $projects_db->load();
+	return 1;
 }
 
 sub load_base_list {
