@@ -202,21 +202,21 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
-	my @head_row = qw/ name url source-url type tag /;
+	my @head_row = qw/ name url source-url type flavour /;
 	$csv->print( $fh, \@head_row );
 	foreach my $alias ( keys %{ $self->{pr_info} } ) {
 		my $data = $self->{pr_info}{$alias};
 		my $name = $data->{name};
 
-		my $tags = $data->{tags};
-		$tags = [ "$name (master)" ] unless $tags;
-		foreach my $tag ( @$tags ) {
+		my $flavours = $data->{flavours};
+		$flavours = [ "$name" ] unless $flavours;
+		foreach my $flavour ( @$flavours ) {
 			$csv->print( $fh, [
 				$name,
 				$data->{url},
 				$data->{'source-url'},
 				$data->{type},
-				$tag
+				$flavour
 			] );
 		}
 	}
