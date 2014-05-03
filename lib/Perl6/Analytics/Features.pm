@@ -71,7 +71,7 @@ sub save_csv {
 	open( my $fh, ">:encoding(utf8)", $fpath )
 		or croak "Open '$fpath' for write failed: $!";
 
-	my $csv = new Text::CSV_XS;
+	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
 	my @head_row = qw/ project_tag section item state fact /;
