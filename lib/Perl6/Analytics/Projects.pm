@@ -155,7 +155,7 @@ sub add_p6_modules {
 			name => $data->{name},
 			description => $data->{description},
 			'source-url' => $real_repo_url,
-			type => [ 'p6-module' ],
+			type => 'module',
 		};
 	}
 	$self->dump('modules info', $mods_info ) if $self->{vl} >= 8;
