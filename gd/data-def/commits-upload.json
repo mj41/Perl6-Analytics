@@ -1,0 +1,121 @@
+{
+   "dataSetSLIManifest" : {
+      "parts" : [
+         {
+            "columnName" : "id",
+            "populates" : [
+               "attr.commit_record"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "project",
+            "populates" : [
+               "l_project.name"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "author_date",
+            "constraints" : { "date" : "yyyy-MM-dd" },
+            "populates" : [
+               "dt_commit_author.date.mdyy"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "committer_date",
+            "constraints" : { "date" : "yyyy-MM-dd" },
+            "populates" : [
+               "dt_commit_committer.date.mdyy"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "commit_author",
+            "populates" : [
+               "l_commit_author.name"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "commit_author_email",
+            "populates" : [
+               "l_commit_author.email"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "commit_committer",
+            "populates" : [
+               "l_commit_committer.name"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "commit_committer_email",
+            "populates" : [
+               "l_commit_committer.email"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "merge",
+            "populates" : [
+               "fact.commit.merge"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "parents",
+            "populates" : [
+               "fact.commit.parents"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "files_a",
+            "populates" : [
+               "fact.commit.files_a"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "files_m",
+            "populates" : [
+               "fact.commit.files_m"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "files_d",
+            "populates" : [
+               "fact.commit.files_d"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "lines_add",
+            "populates" : [
+               "fact.commit.lines_add"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+         {
+            "columnName" : "lines_rm",
+            "populates" : [
+               "fact.commit.lines_rm"
+            ],
+            "mode" : "INCREMENTAL"
+         }
+      ],
+      "file" : "commits.csv",
+      "dataSet" : "dataset.commits"
+   }
+}

@@ -1,0 +1,47 @@
+{
+   "dataSetSLIManifest" : {
+      "parts" : [
+         {
+            "columnName" : "project_tag",
+            "populates" : [
+               "l_project_tag.name"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "section",
+            "populates" : [
+               "l_feature_section.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "item",
+            "populates" : [
+               "l_feature_item.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "state",
+            "populates" : [
+               "l_feature_state.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "fact",
+            "populates" : [
+               "fact.feature"
+            ],
+            "mode" : "FULL"
+         }
+      ],
+      "file" : "features.csv",
+      "dataSet" : "dataset.features"
+   }
+}

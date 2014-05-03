@@ -1,0 +1,46 @@
+{
+   "dataSetSLIManifest" : {
+      "parts" : [
+         {
+            "columnName" : "name",
+            "populates" : [
+               "l_project.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "url",
+            "populates" : [
+               "l_project.url"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "source_url",
+            "populates" : [
+               "l_project.source_url"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "type",
+            "populates" : [
+               "l_project_type.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },         
+         {
+            "columnName" : "flavour",
+            "populates" : [
+               "l_project_flavour.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         }
+      ],
+      "file" : "projects.csv",
+      "dataSet" : "dataset.projects"
+   }
+}

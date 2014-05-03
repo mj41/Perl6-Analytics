@@ -1,0 +1,21 @@
+CREATE FOLDER {dim.project} VISUAL(TITLE "Project") TYPE ATTRIBUTE;
+
+CREATE ATTRIBUTE {attr.project_flavour} VISUAL(TITLE "Project flavour", FOLDER {dim.project})
+  AS KEYS {tab_project_flavour.id} PRIMARY
+  WITH LABELS {l_project_flavour.name} VISUAL(TITLE "Project flavour name") AS {tab_project_flavour.name};
+
+CREATE ATTRIBUTE {attr.project} VISUAL(TITLE "Project", FOLDER {dim.project})
+  AS KEYS {tab_project.id} PRIMARY, {tab_project_flavour.fk_project_id}
+  WITH LABELS {l_project.name} VISUAL(TITLE "Project name") AS {tab_project.name}, 
+              {l_project.url} VISUAL(TITLE "Project url") AS {tab_project.url},
+              {l_project.source_url} VISUAL(TITLE "Project source url") AS {tab_project.source_url}; 
+
+CREATE ATTRIBUTE {attr.project_type} VISUAL(TITLE "Project type", FOLDER {dim.project})
+  AS KEYS {tab_project_type.id} PRIMARY, {tab_project.fk_project_type_id}
+  WITH LABELS {l_project_type.name} VISUAL(TITLE "Project type") AS {tab_project_type.name};
+
+CREATE DATASET {dataset.projects} VISUAL(TITLE "Projects");
+
+ALTER DATASET {dataset.projects} ADD {attr.project}, {attr.project_flavour}, {attr.project_type};
+
+SYNCHRONIZE {dataset.projects};

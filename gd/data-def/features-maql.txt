@@ -1,0 +1,30 @@
+CREATE FOLDER {dim.feature} VISUAL(TITLE "Feature") TYPE ATTRIBUTE;
+CREATE FOLDER {ff.feature} VISUAL(TITLE "Feature") TYPE FACT;
+
+CREATE ATTRIBUTE {attr.feature_record} VISUAL(TITLE "Feature record", FOLDER {dim.feature})
+  AS KEYS {tab_feature.id} FULLSET;
+
+CREATE FACT {fact.feature} VISUAL(TITLE "Feature fact", FOLDER {ff.feature}) AS {tab_feature.fact};
+
+CREATE ATTRIBUTE {attr.feature_item} VISUAL(TITLE "Feature item", FOLDER {dim.feature})
+  AS KEYS {tab_feature_item.id} FULLSET, {tab_feature.fk_feature_item_id}
+  WITH LABELS {l_feature_item.name} VISUAL(TITLE "Feature item") AS {tab_feature_item.name};
+
+CREATE ATTRIBUTE {attr.feature_state} VISUAL(TITLE "Feature state", FOLDER {dim.feature})
+  AS KEYS {tab_feature_state.id} FULLSET, {tab_feature.fk_feature_state_id}
+  WITH LABELS {l_feature_state.name} VISUAL(TITLE "Feature state") AS {tab_feature_state.name};
+
+CREATE ATTRIBUTE {attr.feature_section} VISUAL(TITLE "Feature section", FOLDER {dim.feature})
+  AS KEYS {tab_feature_section.id} FULLSET, {tab_feature_item.fk_feature_section_id}
+  WITH LABELS {l_feature_section.name} VISUAL(TITLE "Feature section") AS {tab_feature_section.name};
+
+CREATE DATASET {dataset.features} VISUAL(TITLE "Features");
+
+ALTER DATASET {dataset.features}
+  ADD {attr.feature_record}, {fact.feature}, 
+      {attr.feature_item}, {attr.feature_state}, 
+      {attr.feature_section};
+
+ALTER ATTRIBUTE {attr.project_tag} ADD KEYS {tab_feature.fk_project_tag};
+
+SYNCHRONIZE {dataset.features};
