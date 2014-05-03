@@ -12,6 +12,7 @@ use base qw(
 
 use JSON::XS;
 use JSON::InFile;
+use Text::CSV_XS;
 
 sub new {
 	my ( $class, %args )= @_;
@@ -178,7 +179,7 @@ sub save_final {
 	return 1;
 }
 
-sub run {
+sub process {
 	my ( $self, %args ) = @_;
 	$args{do_update} //= 1;
 
@@ -188,6 +189,39 @@ sub run {
 	if ( $args{do_update} ) {
 		$self->save_final();
 	}
+}
+
+sub save_csv {
+	my ( $self ) = @_;
+
+	my $fpath = "data-out/projects.csv";
+
+	open( my $fh, ">:encoding(utf8)", $fpath )
+		or croak "Open '$fpath' for write failed: $!";
+
+	my $csv = Text::CSV_XS->new();
+	$csv->eol("\n");
+
+	my @head_row = qw/ name url source-url type tag /;
+	$csv->print( $fh, \@head_row );
+	foreach my $alias ( keys %{ $self->{pr_info} } ) {
+		my $data = $self->{pr_info}{$alias};
+		my $name = $data->{name};
+
+		my $tags = $data->{tags};
+		$tags = [ "$name (master)" ] unless $tags;
+		foreach my $tag ( @$tags ) {
+			$csv->print( $fh, [
+				$name,
+				$data->{url},
+				$data->{'source-url'},
+				$data->{type},
+				$tag
+			] );
+		}
+	}
+
+	close($fh) or croak "Write to '$fpath' failed: $!";
 }
 
 1;
