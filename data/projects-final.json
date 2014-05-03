@@ -2,6 +2,7 @@
    "6model" : {
       "name" : "6model",
       "source-url" : "git://github.com/jnthn/6model.git",
+      "tags" : [],
       "type" : "others",
       "url" : "https://github.com/jnthn/6model"
    },
@@ -470,6 +471,7 @@
    "book" : {
       "name" : "Perl 6 Book",
       "source-url" : "git://github.com/perl6/book.git",
+      "tags" : [],
       "type" : "docs",
       "url" : "https://github.com/perl6/book"
    },
@@ -506,6 +508,7 @@
    "ecosystem" : {
       "name" : "Perl 6 ecosystem",
       "source-url" : "git://github.com/perl6/ecosystem.git",
+      "tags" : [],
       "type" : "vm",
       "url" : "http://modules.perl6.org"
    },
@@ -524,6 +527,7 @@
    "features" : {
       "name" : "Perl 6 features",
       "source-url" : "git://github.com/perl6/features.git",
+      "tags" : [],
       "type" : "others",
       "url" : "http://perl6.org/compilers/features"
    },
@@ -668,6 +672,7 @@
    "moarvm" : {
       "name" : "MoarVM",
       "source-url" : "git://github.com/moarvm/moarvm.git",
+      "tags" : [],
       "type" : "vm",
       "url" : "http://www.moarvm.org"
    },
@@ -680,12 +685,14 @@
    "mu" : {
       "name" : "mu",
       "source-url" : "git://github.com/perl6/mu.git",
+      "tags" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/mu"
    },
    "niecza" : {
       "name" : "Niecza",
       "source-url" : "git://github.com/sorear/niecza.git",
+      "tags" : [],
       "type" : "compiler",
       "url" : "https://github.com/sorear/niecza"
    },
@@ -698,6 +705,7 @@
    "nqp" : {
       "name" : "NQP",
       "source-url" : "git://github.com/perl6/nqp.git",
+      "tags" : [],
       "type" : "compiler_part",
       "url" : "https://github.com/perl6/nqp"
    },
@@ -872,6 +880,7 @@
    "parrot" : {
       "name" : "Parrot",
       "source-url" : "git://github.com/parrot/parrot.git",
+      "tags" : [],
       "type" : "vm",
       "url" : "http://www.parrot.org"
    },
@@ -1238,6 +1247,12 @@
    "rakudo" : {
       "name" : "Rakudo",
       "source-url" : "git://github.com/rakudo/rakudo.git",
+      "tags" : [
+         "Rakudo (master)",
+         "Rakudo MoarVM (master)",
+         "Rakudo JVM (master)",
+         "Rakudo Parrot (master)"
+      ],
       "type" : "compiler",
       "url" : "http://www.rakudo.org"
    },
@@ -1250,18 +1265,21 @@
    "roast" : {
       "name" : "Perl 6 test suite",
       "source-url" : "git://github.com/perl6/roast.git",
+      "tags" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/roast"
    },
    "rosella" : {
       "name" : "Rosella",
       "source-url" : "git://github.com/Whiteknight/Rosella.git",
+      "tags" : [],
       "type" : "parrot_others",
       "url" : "http://whiteknight.github.io/Rosella/"
    },
    "specs" : {
       "name" : "Perl 6 specs",
       "source-url" : "git://github.com/perl6/specs.git",
+      "tags" : [],
       "type" : "docs",
       "url" : "https://github.com/perl6/specs"
    },
@@ -1274,6 +1292,7 @@
    "std" : {
       "name" : "STD",
       "source-url" : "git://github.com/perl6/std.git",
+      "tags" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/std"
    },
@@ -1358,6 +1377,7 @@
    "winxed" : {
       "name" : "winxed",
       "source-url" : "git://github.com/NotFound/winxed.git",
+      "tags" : [],
       "type" : "others",
       "url" : "https://github.com/NotFound/winxed"
    },
