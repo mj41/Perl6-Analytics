@@ -38,8 +38,8 @@ sub project_source_url {
 	my ( $self, $project_alias ) = @_;
 	my $struct = $self->project_struct( $project_alias );
 	return undef unless defined $struct;
-	return undef unless exists $struct->{'source-url'};
-	return $struct->{'source-url'};
+	return undef unless exists $struct->{source_url};
+	return $struct->{source_url};
 }
 
 sub projects_base_fpath {
@@ -81,7 +81,7 @@ sub add_p6_modules {
 	croak "Repository with alias '$ecos_alias' not defined.\n"
 		unless $self->{pr_info}{$ecos_alias};
 
-	my $ecos_repo_url = $self->{pr_info}{$ecos_alias}{'source-url'};
+	my $ecos_repo_url = $self->{pr_info}{$ecos_alias}{source_url};
 
 	my $repo = $self->git_repo_obj($ecos_alias, repo_url => $ecos_repo_url, skip_fetch => $skip_fetch );
 	my @modules_meta_urls = $repo->run('show', 'HEAD:'.$ecos_fpath );
@@ -155,7 +155,7 @@ sub add_p6_modules {
 		$mods_info->{$real_repo_name} = {
 			name => $data->{name},
 			description => $data->{description},
-			'source-url' => $real_repo_url,
+			source_url => $real_repo_url,
 			type => 'module',
 		};
 	}
@@ -202,7 +202,7 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
-	my @head_row = qw/ name url source-url type flavour /;
+	my @head_row = qw/ name url source_url type flavour /;
 	$csv->print( $fh, \@head_row );
 	foreach my $alias ( keys %{ $self->{pr_info} } ) {
 		my $data = $self->{pr_info}{$alias};
@@ -214,7 +214,7 @@ sub save_csv {
 			$csv->print( $fh, [
 				$name,
 				$data->{url},
-				$data->{'source-url'},
+				$data->{source_url},
 				$data->{type},
 				$flavour
 			] );
