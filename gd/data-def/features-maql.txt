@@ -25,6 +25,6 @@ ALTER DATASET {dataset.features}
       {attr.feature_item}, {attr.feature_state}, 
       {attr.feature_section};
 
-ALTER ATTRIBUTE {attr.project_tag} ADD KEYS {tab_feature.fk_project_tag};
+ALTER ATTRIBUTE {attr.project_flavour} ADD KEYS {tab_feature.fk_project_flavour};
 
 SYNCHRONIZE {dataset.features};

@@ -74,7 +74,7 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
-	my @head_row = qw/ project_tag section item state fact /;
+	my @head_row = qw/ project_flavour section item state fact /;
 
 	$csv->print( $fh, \@head_row );
 	my $increment = 1;

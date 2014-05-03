@@ -2,9 +2,9 @@
    "dataSetSLIManifest" : {
       "parts" : [
          {
-            "columnName" : "project_tag",
+            "columnName" : "project_flavour",
             "populates" : [
-               "l_project_tag.name"
+               "l_project_flavour.name"
             ],
             "mode" : "INCREMENTAL",
             "referenceKey" : 1
