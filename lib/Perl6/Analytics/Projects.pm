@@ -157,6 +157,7 @@ sub add_p6_modules {
 			description => $data->{description},
 			source_url => $real_repo_url,
 			type => 'module',
+			flavours => [],
 		};
 	}
 	$self->dump('modules info', $mods_info ) if $self->{vl} >= 8;
@@ -202,14 +203,15 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
+	print "Rewriting '$fpath' with new list of projects.\n" if $self->{vl} >= 5;
 	my @head_row = qw/ name url source_url type flavour /;
 	$csv->print( $fh, \@head_row );
-	foreach my $alias ( keys %{ $self->{pr_info} } ) {
+	foreach my $alias ( sort keys %{ $self->{pr_info} } ) {
 		my $data = $self->{pr_info}{$alias};
 		my $name = $data->{name};
 
 		my $flavours = $data->{flavours};
-		$flavours = [ "$name" ] unless $flavours;
+		$flavours = [ "$name" ] if (not $flavours) or (not scalar @$flavours);
 		foreach my $flavour ( @$flavours ) {
 			$csv->print( $fh, [
 				$name,

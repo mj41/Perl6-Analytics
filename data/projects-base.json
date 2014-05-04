@@ -1,111 +1,111 @@
 {
    "6model" : {
+      "flavours" : [],
       "name" : "6model",
       "source_url" : "git://github.com/jnthn/6model.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "https://github.com/jnthn/6model"
    },
    "book" : {
+      "flavours" : [],
       "name" : "Perl 6 Book",
       "source_url" : "git://github.com/perl6/book.git",
-      "flavours" : [],
       "type" : "docs",
       "url" : "https://github.com/perl6/book"
    },
    "ecosystem" : {
+      "flavours" : [],
       "name" : "Perl 6 ecosystem",
       "source_url" : "git://github.com/perl6/ecosystem.git",
-      "flavours" : [],
       "type" : "vm",
       "url" : "http://modules.perl6.org"
    },
    "features" : {
+      "flavours" : [],
       "name" : "Perl 6 features",
       "source_url" : "git://github.com/perl6/features.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "http://perl6.org/compilers/features"
    },
    "moarvm" : {
+      "flavours" : [],
       "name" : "MoarVM",
       "source_url" : "git://github.com/moarvm/moarvm.git",
-      "flavours" : [],
       "type" : "vm",
       "url" : "http://www.moarvm.org"
    },
    "mu" : {
+      "flavours" : [],
       "name" : "mu",
       "source_url" : "git://github.com/perl6/mu.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/mu"
    },
    "niecza" : {
+      "flavours" : [],
       "name" : "Niecza",
       "source_url" : "git://github.com/sorear/niecza.git",
-      "flavours" : [],
       "type" : "compiler",
       "url" : "https://github.com/sorear/niecza"
    },
    "nqp" : {
+      "flavours" : [],
       "name" : "NQP",
       "source_url" : "git://github.com/perl6/nqp.git",
-      "flavours" : [],
       "type" : "compiler_part",
       "url" : "https://github.com/perl6/nqp"
    },
    "parrot" : {
+      "flavours" : [],
       "name" : "Parrot",
       "source_url" : "git://github.com/parrot/parrot.git",
-      "flavours" : [],
       "type" : "vm",
       "url" : "http://www.parrot.org"
    },
    "rakudo" : {
-      "name" : "Rakudo",
-      "source_url" : "git://github.com/rakudo/rakudo.git",
       "flavours" : [
          "Rakudo",
          "Rakudo MoarVM",
          "Rakudo JVM",
          "Rakudo Parrot"
       ],
+      "name" : "Rakudo",
+      "source_url" : "git://github.com/rakudo/rakudo.git",
       "type" : "compiler",
       "url" : "http://www.rakudo.org"
    },
    "roast" : {
+      "flavours" : [],
       "name" : "Perl 6 test suite",
       "source_url" : "git://github.com/perl6/roast.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/roast"
    },
    "rosella" : {
+      "flavours" : [],
       "name" : "Rosella",
       "source_url" : "git://github.com/Whiteknight/Rosella.git",
-      "flavours" : [],
       "type" : "parrot_others",
       "url" : "http://whiteknight.github.io/Rosella/"
    },
    "specs" : {
+      "flavours" : [],
       "name" : "Perl 6 specs",
       "source_url" : "git://github.com/perl6/specs.git",
-      "flavours" : [],
       "type" : "docs",
       "url" : "https://github.com/perl6/specs"
    },
    "std" : {
+      "flavours" : [],
       "name" : "STD",
       "source_url" : "git://github.com/perl6/std.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "https://github.com/perl6/std"
    },
    "winxed" : {
+      "flavours" : [],
       "name" : "winxed",
       "source_url" : "git://github.com/NotFound/winxed.git",
-      "flavours" : [],
       "type" : "others",
       "url" : "https://github.com/NotFound/winxed"
    }
