@@ -1,0 +1,86 @@
+{
+   "dataSetSLIManifest" : {
+      "parts" : [
+         {
+            "columnName" : "sha1",
+            "populates" : [
+               "l_commit_record.sha1"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "fpath",
+            "populates" : [
+               "l_file.fpath"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "dir_l1",
+            "populates" : [
+               "l_dir_l1.dir"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "dir_l2",
+            "populates" : [
+               "l_dir_l2.dir"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "fname",
+            "populates" : [
+               "l_fname.fname"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "ftype",
+            "populates" : [
+               "l_ftype.name"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "lang",
+            "populates" : [
+               "l_lang.name"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "sub_project",
+            "populates" : [
+               "l_sub_project.name"
+            ],
+            "mode" : "INCREMENTAL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "lines_add",
+            "populates" : [
+               "fact.commit_file.lines_add"
+            ],
+            "mode" : "INCREMENTAL"
+         },
+		{
+            "columnName" : "lines_rm",
+            "populates" : [
+               "fact.commit_file.lines_rm"
+            ],
+            "mode" : "INCREMENTAL"
+         }                  
+      ],
+      "file" : "commits_files.csv",
+      "dataSet" : "dataset.commits_files"
+   }
+}

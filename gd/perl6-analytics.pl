@@ -3,6 +3,7 @@
 my $datanames = [ qw(
 	projects
 	commits
+	commits_files
 	features
 )];
 my $dash_identifier = 'abv26SHOaI4O';
@@ -33,23 +34,37 @@ if (0) {
 # projects
 if (1) {
 	$s->dataset_upload(
-		dataset => $datanames->[0],
+		dataset => 'projects',
 		manifest_dir => $s->script_rel_fpath('data-def'),
-		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', $datanames->[0].'.csv' ),
+		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'projects.csv' ),
 	);
 }
+
 # commits
-if (0) {
+if (1) {
 	$s->dataset_upload(
-		dataset => $datanames->[1],
+		dataset => 'commits',
 		manifest_dir => $s->script_rel_fpath('data-def'),
-		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', $datanames->[1].'.csv' ),
+		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits.csv' ),
+		#csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits-small.csv' ),
+	);
+}
+
+# commits_files
+if (1) {
+	$s->dataset_upload(
+		dataset => 'commits_files',
+		manifest_dir => $s->script_rel_fpath('data-def'),
+		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits_files.csv' ),
 	);
 }
 
 # features
 if (0) {
-	$s->dataset_upload( dataset => $datanames->[2], csv_rel_fpath => '../../../../dalsi/perl6-mj-features/data/features.csv' );
+	$s->dataset_upload(
+		dataset => 'features',
+		csv_rel_fpath => '../../../../dalsi/perl6-mj-features/data/features.csv'
+	);
 
 	use JSON::XS;
 	my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);

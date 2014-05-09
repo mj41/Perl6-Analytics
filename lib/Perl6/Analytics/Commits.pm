@@ -41,9 +41,15 @@ sub process_and_save_csv {
 
 	$self->prepare_dirs();
 
-	my $ga_obj = Git::Analytics->new( verbose_mode => $self->{vl} );
-	$ga_obj->open_out_csv_file( 'data-out/commits.csv' );
-	$ga_obj->print_header_to_csv();
+	my $ga_obj = Git::Analytics->new(
+		verbose_level => $self->{vl},
+		also_commits_files => 1,
+	);
+	$ga_obj->open_out_csv_files(
+		'data-out/commits.csv',
+		'data-out/commits_files.csv'
+	);
+	$ga_obj->print_csv_headers();
 
 	my $num = 1;
 	foreach my $project_alias ( sort keys %$projects ) {
@@ -64,7 +70,7 @@ sub process_and_save_csv {
 		$num++;
 	}
 
-	$ga_obj->close_csv_file();
+	$ga_obj->close_csv_files();
 	return 1;
 }
 

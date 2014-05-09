@@ -1,0 +1,50 @@
+CREATE FOLDER {dim.commit_file} VISUAL(TITLE "Commit detail") TYPE ATTRIBUTE;
+CREATE FOLDER {ff.commit_file} VISUAL(TITLE "Commit detail") TYPE FACT;
+
+CREATE ATTRIBUTE {attr.commit_file_record} VISUAL(TITLE "Commit file record", FOLDER {dim.commit_file})
+  AS KEYS {tab_commit_file.id} PRIMARY;
+
+ALTER ATTRIBUTE {attr.commit_record} ADD KEYS {tab_commit_file.fk_commit_id};
+
+CREATE ATTRIBUTE {attr.file} VISUAL(TITLE "File path", FOLDER {dim.commit_file})
+  AS KEYS {tab_file.id} PRIMARY, {tab_commit_file.fk_file_id}
+  WITH LABELS {l_file.fpath} VISUAL(TITLE "File path") AS {tab_file.fpath};
+
+CREATE ATTRIBUTE {attr.sub_project} VISUAL(TITLE "Sub project", FOLDER {dim.commit_file})
+  AS KEYS {tab_sub_project.id} PRIMARY, {tab_file.fk_sub_project_id}
+  WITH LABELS {l_sub_project.name} VISUAL(TITLE "Sub project name") AS {tab_sub_project.name};
+
+CREATE ATTRIBUTE {attr.lang} VISUAL(TITLE "Programming language", FOLDER {dim.commit_file})
+  AS KEYS {tab_lang.id} PRIMARY, {tab_file.fk_lang_id}
+  WITH LABELS {l_lang.name} VISUAL(TITLE "Programming language") AS {tab_lang.name};
+
+CREATE ATTRIBUTE {attr.ftype} VISUAL(TITLE "File type", FOLDER {dim.commit_file})
+  AS KEYS {tab_ftype.id} PRIMARY, {tab_file.fk_ftype_id}
+  WITH LABELS {l_ftype.name} VISUAL(TITLE "File type") AS {tab_ftype.name};
+
+CREATE ATTRIBUTE {attr.dir_l1} VISUAL(TITLE "Directory (level 1)", FOLDER {dim.commit_file})
+  AS KEYS {tab_dir_l1.id} PRIMARY, {tab_file.fk_dir_l1_id}
+  WITH LABELS {l_dir_l1.dir} VISUAL(TITLE "Directory (level 1)") AS {tab_dir_l1.dir};
+
+CREATE ATTRIBUTE {attr.dir_l2} VISUAL(TITLE "Directory (level 2)", FOLDER {dim.commit_file})
+  AS KEYS {tab_dir_l2.id} PRIMARY, {tab_file.fk_dir_l2_id}
+  WITH LABELS {l_dir_l2.dir} VISUAL(TITLE "Directory (level 2)") AS {tab_dir_l2.dir};
+
+CREATE ATTRIBUTE {attr.fname} VISUAL(TITLE "File name", FOLDER {dim.commit_file})
+  AS KEYS {tab_fname.id} PRIMARY, {tab_file.fk_fname_id}
+  WITH LABELS {l_fname.fname} VISUAL(TITLE "File name") AS {tab_fname.fname};
+
+CREATE FACT {fact.commit_file.lines_add} VISUAL(TITLE "Lines added (commit,file)", FOLDER {ff.commit_file}) 
+  AS {tab_commit_file.lines_add};
+CREATE FACT {fact.commit_file.lines_rm} VISUAL(TITLE "Lines removed (commit,file)", FOLDER {ff.commit_file})
+  AS {tab_commit_file.lines_rm};
+
+CREATE DATASET {dataset.commits_files} VISUAL(TITLE "Commits files");
+
+ALTER DATASET {dataset.commits_files}
+  ADD {attr.commit_file_record},
+      {attr.file}, {attr.sub_project}, {attr.ftype},
+      {attr.dir_l1}, {attr.dir_l2}, {attr.fname},
+      {fact.commit_file.lines_add}, {fact.commit_file.lines_rm};
+
+SYNCHRONIZE {dataset.commits_files};
