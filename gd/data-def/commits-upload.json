@@ -2,9 +2,9 @@
    "dataSetSLIManifest" : {
       "parts" : [
          {
-            "columnName" : "id",
+            "columnName" : "commit_sha1",
             "populates" : [
-               "attr.commit_record"
+               "l_commit_record.sha1"
             ],
             "mode" : "INCREMENTAL",
             "referenceKey" : 1

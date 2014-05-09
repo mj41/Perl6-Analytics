@@ -2,7 +2,8 @@ CREATE FOLDER {dim.commit} VISUAL(TITLE "Commit") TYPE ATTRIBUTE;
 CREATE FOLDER {ff.commit} VISUAL(TITLE "Commit") TYPE FACT;
 
 CREATE ATTRIBUTE {attr.commit_record} VISUAL(TITLE "Commit record", FOLDER {dim.commit})
-  AS KEYS {tab_commit.id} FULLSET;
+  AS KEYS {tab_commit.id} PRIMARY
+  WITH LABELS {l_commit_record.sha1} VISUAL(TITLE "Commit sha1") AS {tab_commit.sha1};
 
 INCLUDE TEMPLATE "URN:GOODDATA:DATE" MODIFY (IDENTIFIER "dt_commit_author", TITLE "Author");
 INCLUDE TEMPLATE "URN:GOODDATA:DATE" MODIFY (IDENTIFIER "dt_commit_committer", TITLE "Committer");
@@ -19,7 +20,6 @@ CREATE ATTRIBUTE {attr.commit_committer} VISUAL(TITLE "Commit committer", FOLDER
   AS KEYS {tab_commit_committer.id} FULLSET, {tab_commit.fk_commit_committer_id}
   WITH LABELS {l_commit_committer.name} VISUAL(TITLE "Commit committer name") AS {tab_commit_committer.name},
               {l_commit_committer.email} VISUAL(TITLE "Commit committer email") AS {tab_commit_committer.email};
-
 
 CREATE FACT {fact.commit.merge} VISUAL(TITLE "Commit is merge", FOLDER {ff.commit}) AS {tab_commit.merge};
 CREATE FACT {fact.commit.parents} VISUAL(TITLE "Commit parents num", FOLDER {ff.commit}) AS {tab_commit.parents};
