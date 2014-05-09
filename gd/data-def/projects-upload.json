@@ -6,7 +6,7 @@
             "populates" : [
                "l_project.name"
             ],
-            "mode" : "FULL",
+            "mode" : "INCREMENTAL",
             "referenceKey" : 1
          },
          {
@@ -14,21 +14,21 @@
             "populates" : [
                "l_project.url"
             ],
-            "mode" : "FULL"
+            "mode" : "INCREMENTAL"
          },
          {
             "columnName" : "source_url",
             "populates" : [
                "l_project.source_url"
             ],
-            "mode" : "FULL"
+            "mode" : "INCREMENTAL"
          },
          {
             "columnName" : "type",
             "populates" : [
                "l_project_type.name"
             ],
-            "mode" : "FULL",
+            "mode" : "INCREMENTAL",
             "referenceKey" : 1
          },         
          {
@@ -36,7 +36,7 @@
             "populates" : [
                "l_project_flavour.name"
             ],
-            "mode" : "FULL",
+            "mode" : "INCREMENTAL",
             "referenceKey" : 1
          }
       ],

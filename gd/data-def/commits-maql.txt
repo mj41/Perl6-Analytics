@@ -12,12 +12,12 @@ ALTER ATTRIBUTE {dt_commit_author.date} ADD KEYS {tab_commit.author_date_id};
 ALTER ATTRIBUTE {dt_commit_committer.date} ADD KEYS {tab_commit.committer_date_id};
 
 CREATE ATTRIBUTE {attr.commit_author} VISUAL(TITLE "Commit author", FOLDER {dim.commit})
-  AS KEYS {tab_commit_author.id} FULLSET, {tab_commit.fk_commit_author_id}
+  AS KEYS {tab_commit_author.id} PRIMARY, {tab_commit.fk_commit_author_id}
   WITH LABELS {l_commit_author.name} VISUAL(TITLE "Commit author name") AS {tab_commit_author.name},
               {l_commit_author.email} VISUAL(TITLE "Commit author email") AS {tab_commit_author.email};
 
 CREATE ATTRIBUTE {attr.commit_committer} VISUAL(TITLE "Commit committer", FOLDER {dim.commit})
-  AS KEYS {tab_commit_committer.id} FULLSET, {tab_commit.fk_commit_committer_id}
+  AS KEYS {tab_commit_committer.id} PRIMARY, {tab_commit.fk_commit_committer_id}
   WITH LABELS {l_commit_committer.name} VISUAL(TITLE "Commit committer name") AS {tab_commit_committer.name},
               {l_commit_committer.email} VISUAL(TITLE "Commit committer email") AS {tab_commit_committer.email};
 
