@@ -23,6 +23,41 @@ sub prepare_dirs {
 	}
 }
 
+sub get_to_sub_project_tr_closure {
+	my ( $self, $project_alias ) = @_;
+
+	if ( $project_alias eq 'mu' ) {
+		return sub {
+			my ( $fpath, $dir_l1, $dir_l2, $fname ) = @_;
+			# moved
+			return 'p5-modules'   if $fpath =~ m{^perl5/};
+			return 'Pugs.hs'      if $fpath =~ m{^pugs/};
+			return 'roast'        if $fpath =~ m{^spectests/};
+			return 'roast'        if $fpath =~ m{^t/spec/};
+			return 'specs'        if $fpath =~ m{^docs/Perl6/Spec/};
+			return 'perl6.org'    if $fpath =~ m{^docs/feather/perl6.org/};
+			return 'std'          if $fpath =~ m{^src/perl6/};
+			return 'p5-modules'   if $fpath =~ m{^perl5/};
+			return 'evalbot'      if $fpath =~ m{^misc/evalbot/};
+			# others
+			return 'Pugs.hs'      if $fpath =~ m{^src/Pugs/};
+			return 'perl6advent'  if $fpath =~ m{^misc/perl6advent\-\d*/};
+			return 'pugscode.org' if $fpath =~ m{^docs/feather/pugscode.org};
+			return 'v6-MiniPerl6' if $fpath =~ m{^v6/v6-MiniPerl6};
+			return 'tests'        if $fpath =~ m{^t/};
+			return 'tests'        if $fpath =~ m{^tests?/};
+			return 'docs'         if $fpath =~ m{^docs?/};
+			return 'readme'       if $fpath =~ m{^readme\.}i;
+			# not known sub-project
+			return '-' unless $dir_l1;
+			return $dir_l1 unless $dir_l2;
+			return $dir_l2;
+		}
+	}
+
+	return undef;
+}
+
 sub process_and_save_csv {
 	my ( $self, %args ) = @_;
 	my $skip_fetch = $args{skip_fetch} // 0;
@@ -66,7 +101,12 @@ sub process_and_save_csv {
 			skip_fetch => $skip_fetch,
 		);
 		my $git_lograw_obj = Git::Repository::LogRaw->new( $base_repo_obj, $self->{vl} );
-		$ga_obj->process_one( $project_alias, $project_name, $git_lograw_obj );
+		$ga_obj->process_one(
+			$project_alias,
+			$project_name,
+			$git_lograw_obj,
+			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias ),
+		);
 		$num++;
 	}
 
