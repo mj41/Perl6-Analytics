@@ -20,6 +20,7 @@ sub new {
 		pr_info => {},
 	};
 	$self->{vl} = $args{verbose_level} // 3;
+	$self->{projects_final_fpath} = $args{projects_final_fpath} || 'data/projects-final.json';
 	bless $self, $class;
 }
 
@@ -47,7 +48,8 @@ sub projects_base_fpath {
 }
 
 sub projects_final_fpath {
-	return 'data/projects-final.json';
+	my $self = shift;
+	return $self->{projects_final_fpath};
 }
 
 sub load_from_cache {
@@ -193,9 +195,8 @@ sub process {
 }
 
 sub save_csv {
-	my ( $self ) = @_;
-
-	my $fpath = "data-out/projects.csv";
+	my ( $self, $fpath ) = @_;
+	$fpath //= "data-out/projects.csv";
 
 	open( my $fh, ">:encoding(utf8)", $fpath )
 		or croak "Open '$fpath' for write failed: $!";
