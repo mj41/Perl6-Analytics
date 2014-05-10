@@ -867,6 +867,13 @@
       "source_url" : "git://github.com/FROGGS/p6-Games-BubbleBreaker.git",
       "type" : "module"
    },
+   "p6-Git-Wrapper" : {
+      "description" : "simple, hacky way to use git from Perl 6",
+      "flavours" : [],
+      "name" : "Git::Wrapper",
+      "source_url" : "git://github.com/perlpilot/p6-Git-Wrapper.git",
+      "type" : "module"
+   },
    "p6-IO-Path-More" : {
       "description" : "Extends IO::Path to make it more like p5's Path::Class",
       "flavours" : [],
