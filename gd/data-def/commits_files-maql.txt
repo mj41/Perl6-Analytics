@@ -43,7 +43,7 @@ CREATE DATASET {dataset.commits_files} VISUAL(TITLE "Commits files");
 
 ALTER DATASET {dataset.commits_files}
   ADD {attr.commit_file_record},
-      {attr.file}, {attr.sub_project}, {attr.ftype},
+      {attr.file}, {attr.sub_project}, {attr.lang}, {attr.ftype},
       {attr.dir_l1}, {attr.dir_l2}, {attr.fname},
       {fact.commit_file.lines_add}, {fact.commit_file.lines_rm};
 
