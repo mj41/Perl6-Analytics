@@ -24,7 +24,7 @@ sub prepare_dirs {
 }
 
 sub get_to_sub_project_tr_closure {
-	my ( $self, $project_alias ) = @_;
+	my ( $self, $project_alias, $project_name ) = @_;
 
 	if ( $project_alias eq 'mu' ) {
 		return sub {
@@ -49,7 +49,7 @@ sub get_to_sub_project_tr_closure {
 			return 'docs'         if $fpath =~ m{^docs?/};
 			return 'readme'       if $fpath =~ m{^readme\.}i;
 			# not known sub-project
-			return '-' unless $dir_l1;
+			return $project_name unless $dir_l1;
 			return $dir_l1 unless $dir_l2;
 			return $dir_l2;
 		}
@@ -105,7 +105,7 @@ sub process_and_save_csv {
 			$project_alias,
 			$project_name,
 			$git_lograw_obj,
-			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias ),
+			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias, $project_name ),
 		);
 		$num++;
 	}
