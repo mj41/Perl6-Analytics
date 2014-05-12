@@ -1,13 +1,5 @@
 # Create project, run maql and upload data.
 
-my $datanames = [ qw(
-	projects
-	commits
-	commits_files
-	features
-)];
-my $dash_identifier = 'abv26SHOaI4O';
-
 $s->login();
 $s->get_or_create_project(
 	title => $s->get_cfg('project_name') || die "No project name provided.",
@@ -15,16 +7,34 @@ $s->get_or_create_project(
 	driver => $s->get_cfg('driver') || 'Pg',
 );
 
+# Datasets names.
+my @datanames = qw(
+	projects
+	commits
+	commits_files
+);
+my @datanames_plus = qw(
+	features
+);
+my $base_data_def_dir = $s->script_rel_fpath('../../Git-Analytics/gd/data-def');
+my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
+
+my $dash_identifier = 'abv26SHOaI4O';
+
 # maql
 $s->run_maql_for_dataset(
-	dataset => $datanames,
-	maql_dir => $s->script_rel_fpath('data-def'),
+	dataset => [ @datanames ],
+	maql_dir => $base_data_def_dir,
+);
+$s->run_maql_for_dataset(
+	dataset => [ @datanames_plus ],
+	maql_dir => $plus_data_def_dir,
 );
 
 # delete all data
-if (0) {
+if (1) {
 	my $maql = '';
-	foreach my $ds_base_name ( sort @$datanames ) {
+	foreach my $ds_base_name ( @datanames, @datanames_plus ) {
 		$maql .= "\n" if $maql;
 		$maql .= sprintf( 'SYNCHRONIZE {%s};', 'dataset.'.$ds_base_name );
 	}
@@ -35,7 +45,7 @@ if (0) {
 if (1) {
 	$s->dataset_upload(
 		dataset => 'projects',
-		manifest_dir => $s->script_rel_fpath('data-def'),
+		manifest_dir => $base_data_def_dir,
 		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'projects.csv' ),
 	);
 }
@@ -44,7 +54,7 @@ if (1) {
 if (1) {
 	$s->dataset_upload(
 		dataset => 'commits',
-		manifest_dir => $s->script_rel_fpath('data-def'),
+		manifest_dir => $base_data_def_dir,
 		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits.csv' ),
 		#csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits-small.csv' ),
 	);
@@ -54,7 +64,7 @@ if (1) {
 if (1) {
 	$s->dataset_upload(
 		dataset => 'commits_files',
-		manifest_dir => $s->script_rel_fpath('data-def'),
+		manifest_dir => $base_data_def_dir,
 		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'commits_files.csv' ),
 	);
 }
@@ -63,6 +73,7 @@ if (1) {
 if (0) {
 	$s->dataset_upload(
 		dataset => 'features',
+		manifest_dir => $plus_data_def_dir,
 		csv_rel_fpath => '../../../../dalsi/perl6-mj-features/data/features.csv'
 	);
 
