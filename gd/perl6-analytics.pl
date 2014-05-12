@@ -1,5 +1,9 @@
 # Create project, run maql and upload data.
 
+my $do_synchronize = $s->get_cfg('do_synchronize');
+my $do_uploads = $s->get_cfg('do_uploads');
+my $do_addon_features = $s->get_cfg('do_addon_features');
+
 $s->login();
 $s->get_or_create_project(
 	title => $s->get_cfg('project_name') || die "No project name provided.",
@@ -31,8 +35,8 @@ $s->run_maql_for_dataset(
 	maql_dir => $plus_data_def_dir,
 );
 
-# delete all data
-if (1) {
+# synchronize - delete all data
+if ( $do_synchronize ) {
 	my $maql = '';
 	foreach my $ds_base_name ( @datanames, @datanames_plus ) {
 		$maql .= "\n" if $maql;
@@ -42,7 +46,7 @@ if (1) {
 }
 
 # projects
-if (1) {
+if ( $do_uploads ) {
 	$s->dataset_upload(
 		dataset => 'projects',
 		manifest_dir => $base_data_def_dir,
@@ -51,7 +55,7 @@ if (1) {
 }
 
 # commits
-if (1) {
+if ( $do_uploads ) {
 	$s->dataset_upload(
 		dataset => 'commits',
 		manifest_dir => $base_data_def_dir,
@@ -61,7 +65,7 @@ if (1) {
 }
 
 # commits_files
-if (1) {
+if ( $do_uploads ) {
 	$s->dataset_upload(
 		dataset => 'commits_files',
 		manifest_dir => $base_data_def_dir,
@@ -70,7 +74,7 @@ if (1) {
 }
 
 # features
-if (0) {
+if ( $do_uploads && $do_addon_features ) {
 	$s->dataset_upload(
 		dataset => 'features',
 		manifest_dir => $plus_data_def_dir,

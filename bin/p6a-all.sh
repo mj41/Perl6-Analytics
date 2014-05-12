@@ -53,9 +53,9 @@ perl bin/features-refresh.pl $SKIP_FETCH 5
 cd /home/mj/gd/rolapps/apps/rcheck/
 echo "Updating GD project"
 if [ "$INSTANCE_TYPE" == "prod" ]; then
-	perl rcheck.pl -vl 8 -cf config/secure-na.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl -p $GD_PROJ_NAME
+	perl rcheck.pl -vl 8 -cf config/secure-na.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl -p $GD_PROJ_NAME --co do_uploads=1
 else
-	perl rcheck.pl --base_url "https://$PI_HOSTNAME" -vl 8 -cf config/dev-machine.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl -p $GD_PROJ_NAME
+	perl rcheck.pl --base_url "https://$PI_HOSTNAME" -vl 8 -cf config/dev-machine.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl -p $GD_PROJ_NAME --co do_uploads=1
 fi
 
 echo "Done"
