@@ -76,13 +76,17 @@ sub process_and_save_csv {
 
 	$self->prepare_dirs();
 
+	my $data_out_dir = $args{data_out_dir} || 'data-out';
+	my $data_cache_dir = $args{data_cache_dir} || 'data-cache';
+
 	my $ga_obj = Git::Analytics->new(
 		verbose_level => $self->{vl},
 		also_commits_files => 1,
+		data_cache_dir => $data_cache_dir,
 	);
 	$ga_obj->open_out_csv_files(
-		'data-out/commits.csv',
-		'data-out/commits_files.csv'
+		File::Spec->catfile( $data_out_dir, 'commits.csv' ),
+		File::Spec->catfile( $data_out_dir, 'commits_files.csv' ),
 	);
 	$ga_obj->print_csv_headers();
 
@@ -106,6 +110,7 @@ sub process_and_save_csv {
 			$project_name,
 			$git_lograw_obj,
 			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias, $project_name ),
+			git_log_args => $args{git_log_args} // {},
 		);
 		$num++;
 	}
