@@ -8,14 +8,14 @@
    },
    "book" : {
       "flavours" : [],
-      "name" : "Perl 6 Book",
+      "name" : "book",
       "source_url" : "git://github.com/perl6/book.git",
       "type" : "docs",
       "url" : "https://github.com/perl6/book"
    },
    "ecosystem" : {
       "flavours" : [],
-      "name" : "Perl 6 ecosystem",
+      "name" : "ecosystem",
       "source_url" : "git://github.com/perl6/ecosystem.git",
       "type" : "vm",
       "url" : "http://modules.perl6.org"
@@ -90,14 +90,14 @@
    },
    "specs" : {
       "flavours" : [],
-      "name" : "Perl 6 specs",
+      "name" : "specs",
       "source_url" : "git://github.com/perl6/specs.git",
       "type" : "docs",
       "url" : "https://github.com/perl6/specs"
    },
    "std" : {
       "flavours" : [],
-      "name" : "STD",
+      "name" : "std",
       "source_url" : "git://github.com/perl6/std.git",
       "type" : "others",
       "url" : "https://github.com/perl6/std"
