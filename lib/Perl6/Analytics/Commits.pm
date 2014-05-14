@@ -98,47 +98,36 @@ sub one_project_finished {
 sub get_author_committer_tr_closure {
 	my ( $self, $project_alias, $project_name ) = @_;
 
-	$self->{tr_emails_data_map} = {
-		mu => 'common-emtr',
-		specs => 'common-emtr',
-		roast => 'common-emtr',
-		parrot => 'common-emtr',
-		rakudo => 'common-emtr',
-		moarvm => 'common-emtr',
-	} unless exists $self->{tr_emails_data_map};
-
-	if ( exists $self->{tr_emails_data_map}{$project_alias} ) {
-
-		my $repo_emails_tr_data = $self->load_repo_emails_tr(
-			$project_alias,
-			$self->{tr_emails_data_map}{$project_alias}
-		);
-		return sub {
-			my ( $a_name, $a_email, $c_name, $c_email ) = @_;
-			# author
-			if ( exists $repo_emails_tr_data->{$a_email} ) {
-				( $a_email, $a_name ) = @{ $repo_emails_tr_data->{$a_email} };
-				$a_name = $repo_emails_tr_data->{$a_email}[1] unless $a_email;
-			} else {
-				$repo_emails_tr_data->{$a_email} = [
-					$a_email, $a_name
-				];
-			}
-			# committer
-			if ( exists $repo_emails_tr_data->{$c_email} ) {
-				( $c_email, $c_name ) = @{ $repo_emails_tr_data->{$c_email} };
-				$c_name = $repo_emails_tr_data->{$c_email}[1] unless $c_email;
-			} else {
-				$repo_emails_tr_data->{$c_email} = [
-					$c_email, $c_name
-				];
-			}
-			return ( $a_name, $a_email, $c_name, $c_email );
+	my $repo_emails_tr_data = $self->load_repo_emails_tr(
+		$project_alias,
+		'common-emtr'
+	);
+	return sub {
+		my ( $a_name, $a_email, $c_name, $c_email ) = @_;
+		# author
+		if ( exists $repo_emails_tr_data->{$a_email} ) {
+			( $a_email, $a_name ) = @{ $repo_emails_tr_data->{$a_email} };
+			$a_name = $repo_emails_tr_data->{$a_email}[1] unless $a_name;
+		} else {
+			$repo_emails_tr_data->{$a_email} = [
+				$a_email, $a_name
+			];
 		}
-	}
+		$a_name = $a_email unless $a_name;
 
-	$self->{repo_emails_tr} = undef;
-	return undef;
+		# committer
+		if ( exists $repo_emails_tr_data->{$c_email} ) {
+			( $c_email, $c_name ) = @{ $repo_emails_tr_data->{$c_email} };
+			$c_name = $repo_emails_tr_data->{$c_email}[1] unless $c_name;
+		} else {
+			$repo_emails_tr_data->{$c_email} = [
+				$c_email, $c_name
+			];
+		}
+		$c_name = $c_email unless $c_name;
+
+		return ( $a_name, $a_email, $c_name, $c_email );
+	}
 }
 
 sub process_and_save_csv {
