@@ -3,6 +3,14 @@
       "(no author)",
       "(no author)"
    ],
+   "2010@huri.net" : [
+      "2010@huri.net",
+      "Timothy Totten"
+   ],
+   "2@ivanoff.org.ua" : [
+      "2@ivanoff.org.ua",
+      "ivanoff"
+   ],
    "Aankhen@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Aankhen@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "Aankhen"
@@ -34,6 +42,9 @@
    "Enveigler@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Enveigler@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "Enveigler"
+   ],
+   "GlitchMr@users.noreply.github.com" : [
+      "glitch.mr@gmail.com"
    ],
    "Ivan_A_Frey@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Ivan_A_Frey@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -156,6 +167,10 @@
       "allison@perl.org",
       "Allison Randal"
    ],
+   "amir.aharoni@mail.huji.ac.il" : [
+      "amir.aharoni@mail.huji.ac.il",
+      "Amir E. Aharoni"
+   ],
    "anatolyv@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "anatolyv@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "anatolyv"
@@ -167,6 +182,10 @@
    "andras@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "andras@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "andras"
+   ],
+   "andrew@egeler.us" : [
+      "andrew@egeler.us",
+      "Andrew Egeler"
    ],
    "andy@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "andy@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -194,6 +213,10 @@
    "ash@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "ash@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "ash"
+   ],
+   "atroxaper@Mac-Pro-atroxaper.local" : [
+      "atroxaper@Mac-Pro-atroxaper.local",
+      "atroxaper"
    ],
    "audreyt@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "audreyt@unknown.com"
@@ -249,8 +272,11 @@
       "baest"
    ],
    "bbkr@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "bbkr@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "bbkr"
+      "bbkr@post.pl"
+   ],
+   "bbkr@post.pl" : [
+      "bbkr@post.pl",
+      "Pawel Pabian"
    ],
    "bcmb@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "bcmb@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -263,6 +289,10 @@
    "benedikth@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "benedikth@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "benedikth"
+   ],
+   "benji@silverinsanity.com" : [
+      "benji@silverinsanity.com",
+      "Brian Gernhardt"
    ],
    "benmorrow@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "benmorrow@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -300,6 +330,18 @@
       "brentdax@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "brentdax"
    ],
+   "bri@abrij.org" : [
+      "bri@abrij.org",
+      "skids"
+   ],
+   "bri@charon.clarku.edu" : [
+      "bri@charon.clarku.edu",
+      "bri"
+   ],
+   "brian@gernhardtsoftware.com" : [
+      "brian@gernhardtsoftware.com",
+      "Brian Gernhardt"
+   ],
    "brian_d_foy@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "brian_d_foy@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "brian_d_foy"
@@ -315,6 +357,10 @@
    "bsb@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "bsb@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "bsb"
+   ],
+   "bslaabs@gmail.com" : [
+      "bslaabs@gmail.com",
+      "Brent Laabs"
    ],
    "bsmith@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "bsmith@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -347,6 +393,10 @@
    "cfourier@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "cfourier@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "cfourier"
+   ],
+   "chansen@cpan.org" : [
+      "chansen@cpan.org",
+      "chansen"
    ],
    "chrisdolan@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "chrisdolan@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -400,11 +450,18 @@
       "cmeyer"
    ],
    "cognominal@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "cognominal@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "cognominal"
+       "cognominal@gmail.com"
+   ],
+   "cognominal@gmail.com" : [
+      "cognominal@gmail.com",
+      "StÃ©phane Payrard"
    ],
    "coke@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "will@coleda.com"
+   ],
+   "coleoid@gmail.com" : [
+      "coleoid@gmail.com",
+      "Coleoid"
    ],
    "colomon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "colomon@gmail.com"
@@ -434,8 +491,11 @@
       "cosmicnet"
    ],
    "cspencer@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "cspencer@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "cspencer"
+      "cspencer@sprocket.org"
+   ],
+   "cspencer@sprocket.org" : [
+      "cspencer@sprocket.org",
+      "Cory Spencer"
    ],
    "cspenser@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "cspenser@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -445,6 +505,10 @@
       "dada@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "dada"
    ],
+   "dagurval@pvv.ntnu.no" : [
+      "dagurval@pvv.ntnu.no",
+      "dagurval"
+   ],
    "dakkar@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dakkar@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "dakkar"
@@ -452,6 +516,10 @@
    "damian@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "damian@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "damian"
+   ],
+   "daniel@censorshipresearch.org" : [
+      "daniel@censorshipresearch.org",
+      "Daniel Colascione"
    ],
    "dankogai@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dankogai@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -492,9 +560,21 @@
       "diotalevi@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "diotalevi"
    ],
+   "dj@conoptica.com" : [
+      "dj@conoptica.com",
+      "Dagur Valberg Johannsson"
+   ],
+   "djanatyn@gmail.com" : [
+      "djanatyn@gmail.com",
+      "Jonathan"
+   ],
    "dlo@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dlo@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "dlo"
+   ],
+   "dmol@gmx.com" : [
+      "dmol@gmx.com",
+      "Ivan Baidakou"
    ],
    "dolmans@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dolmans@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -507,6 +587,10 @@
    "domm@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "domm@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "domm"
+   ],
+   "donald@sealgair.com" : [
+      "donald@sealgair.com",
+      "Donald Hunter"
    ],
    "dr_df0@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dr_df0@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -530,6 +614,18 @@
    "dvergin@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dvergin@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "dvergin"
+   ],
+   "dvj@dagur.com" : [
+      "dvj@dagur.com",
+      "Dagur"
+   ],
+   "dwhipp@google.com" : [
+      "dwhipp@google.com",
+      "Dave Whipp"
+   ],
+   "edwin.steiner@gmx.net" : [
+      "edwin.steiner@gmx.net",
+      "Edwin Steiner"
    ],
    "elmex@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "elmex@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -555,9 +651,16 @@
       "fayland@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "fayland"
    ],
+   "felix@herrmann-koenigsberg.de" : [
+      "felix@herrmann-koenigsberg.de",
+      "Felix Herrmann"
+   ],
    "felliott@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "felliott@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "felliott"
+      "felliott@virginia.edu"
+   ],
+   "felliott@virginia.edu" : [
+      "felliott@virginia.edu",
+      "Fitz Elliott"
    ],
    "ferreira@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "ferreira@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -575,9 +678,21 @@
       "fireartist@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "fireartist"
    ],
+   "fitz.elliott@gmail.com" : [
+      "fitz.elliott@gmail.com",
+      "Fitz Elliott"
+   ],
    "flounder99@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "flounder99@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "flounder99"
+   ],
+   "flussence+git@gmail.com" : [
+      "flussence+git@gmail.com",
+      "Anthony Parsons"
+   ],
+   "flussence@gmail.com" : [
+      "flussence@gmail.com",
+      "Anthony Parsons"
    ],
    "foad@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "foad@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -599,6 +714,10 @@
       "gabriele@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "gabriele"
    ],
+   "gam@grok.no" : [
+      "gam@grok.no",
+      "Geir Amdal"
+   ],
    "gbacon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "gbacon@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "gbacon"
@@ -606,6 +725,10 @@
    "gcomnz@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "gcomnz@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "gcomnz"
+   ],
+   "geoff@broadwell.org" : [
+      "geoff@broadwell.org",
+      "Geoffrey Broadwell"
    ],
    "geoffb@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "geoffb@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -623,17 +746,32 @@
       "github@autoexec.demon.nl",
       "Martin Berends"
    ],
+   "gjb@google.com" : [
+      "gjb@google.com",
+      "Geoffrey Broadwell"
+   ],
    "gjb@sonic.net" : [
       "gjb@sonic.net",
       "japhb"
    ],
+   "glassflag@users.noreply.github.com" : [
+      "glassflag@users.noreply.github.com",
+      "Carlin"
+   ],
+   "glitch.mr@gmail.com" : [
+      "glitch.mr@gmail.com",
+      "Konrad Borowski"
+   ],
    "glitchmr@myopera.com" : [
-      "glitchmr@myopera.com",
-      "It's secret to everybody"
+      "glitch.mr@gmail.com"
    ],
    "gnuvince@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "gnuvince@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "gnuvince"
+   ],
+   "grondilu@yahoo.fr" : [
+      "grondilu@yahoo.fr",
+      "grondilu"
    ],
    "gugod@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "gugod@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -654,6 +792,10 @@
    "hcchien@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "hcchien@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "hcchien"
+   ],
+   "helmut@wollmersdorfer.at" : [
+      "helmut@wollmersdorfer.at",
+      "Helmut Wollmersdorfer"
    ],
    "hinrik@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "hinrik@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -686,6 +828,10 @@
       "ingy@ingy.net",
       "Ingy dot Net"
    ],
+   "j.romeril@gmail.com" : [
+      "j.romeril@gmail.com",
+      "jamesrom"
+   ],
    "jafelds@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jafelds@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "jafelds"
@@ -693,6 +839,10 @@
    "jani@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jani@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "jani"
+   ],
+   "jdhore1@gmail.com" : [
+      "jdhore1@gmail.com",
+      "JD Horelick"
    ],
    "jdlugosz@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dhcgnd702@sneakemail.com"
@@ -724,6 +874,10 @@
       "jimmy@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "jimmy"
    ],
+   "jimmy@ubuntu.ubuntu-domain" : [
+      "jimmy@ubuntu.ubuntu-domain",
+      "jimmy"
+   ],
    "jnthn@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jnthn@jnthn.net"
    ],
@@ -734,6 +888,10 @@
    "joao@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "joao@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "joao"
+   ],
+   "johannes@laire.fi" : [
+      "johannes@laire.fi",
+      "Johannes Laire"
    ],
    "jonathan@leto.net" : [
       "jonathan@leto.net",
@@ -792,6 +950,17 @@
    "kolyuchiy@gmail.com" : [
       "kolyuchiy@gmail.com",
       "Kolia Morev"
+   ],
+   "kris@shannon.id.au" : [
+      "kris@shannon.id.au",
+      "Kris Shannon"
+   ],
+   "kristof@PCHOME.(none)" : [
+      "kristofbogaerts@gmail.com"
+   ],
+   "kristofbogaerts@gmail.com" : [
+      "kristofbogaerts@gmail.com",
+      "kboga"
    ],
    "krunen@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "krunen@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -879,6 +1048,10 @@
       "lumi@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "lumi"
    ],
+   "lumimies@gmail.com" : [
+      "lumimies@gmail.com",
+      "Zohar Kelrich"
+   ],
    "luqui@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "luqui@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "luqui"
@@ -909,6 +1082,10 @@
    "mark@glines.org" : [
       "mark@glines.org",
       "Mark Glines"
+   ],
+   "mark@kli.org" : [
+      "mark@kli.org",
+      "Mark Shoulson"
    ],
    "markstos@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "markstos@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1001,6 +1178,10 @@
       "naesten@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "naesten"
    ],
+   "nastavs@gmail.com" : [
+      "nastavs@gmail.com",
+      "isBEKaml"
+   ],
    "nelhage@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "nelhage@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "nelhage"
@@ -1047,9 +1228,20 @@
       "patch@cpan.org",
       "Nick Patch"
    ],
+   "patrick.abisalloum@gmail.com" : [
+      "patrick.abisalloum@gmail.com",
+      "Patrick Abi Salloum"
+   ],
    "patrickas@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "patrickas@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "patrickas"
+   ],
+   "pawel@octopus" : [
+      "pawelmurias@gmail.com"
+   ],
+   "pawelmurias@gmail.com" : [
+      "pawelmurias@gmail.com",
+      "PaweÅ Murias"
    ],
    "payload@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "payload@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1063,9 +1255,17 @@
       "perlDreamer@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "perlDreamer"
    ],
+   "peschwa@gmail.com" : [
+      "peschwa@gmail.com",
+      "Pepe Schwarz"
+   ],
    "philcrow@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "philcrow@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "philcrow"
+   ],
+   "philipgpotter@gmail.com" : [
+      "philipgpotter@gmail.com",
+      "Philip Potter"
    ],
    "pjf@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "pjf@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1129,6 +1329,10 @@
       "rafl@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "rafl"
    ],
+   "raiph.mellor@gmail.com" : [
+      "raiph.mellor@gmail.com",
+      "raiph"
+   ],
    "raptor@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "raptor@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "raptor"
@@ -1170,8 +1374,11 @@
       "lue"
    ],
    "rnhainsworth@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "rnhainsworth@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "rnhainsworth"
+      "rnhainsworth@gmail.com"
+   ],
+   "rnhainsworth@gmail.com" : [
+      "rnhainsworth@gmail.com",
+      "finanalyst"
    ],
    "rob@hoelz.ro" : [
       "rob@hoelz.ro",
@@ -1197,9 +1404,17 @@
       "ron@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "ron"
    ],
+   "ronaldxs@software-path.com" : [
+      "ronaldxs@software-path.com",
+      "ronaldxs"
+   ],
    "rooneg@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "rooneg@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "rooneg"
+   ],
+   "root@charon.clarku.edu" : [
+      "root@charon.clarku.edu",
+      "root"
    ],
    "rootmj@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "mj@mj41.cz"
@@ -1208,9 +1423,12 @@
       "ruoso@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "ruoso"
    ],
+   "ruz@bestpractical.com" : [
+      "ruz@bestpractical.com",
+      "Ruslan Zakirov"
+   ],
    "ruz@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "ruz@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "ruz"
+      "ruz@bestpractical.com"
    ],
    "ryporter@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "ryporter@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1228,6 +1446,10 @@
       "salty_horse@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "salty_horse"
    ],
+   "samuraiblog@gmail.com" : [
+      "samuraiblog@gmail.com",
+      "Samuel Sutch"
+   ],
    "sanug@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "sanug@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "sanug"
@@ -1237,8 +1459,11 @@
       "sartak"
    ],
    "schwarzer@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "schwarzer@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "schwarzer"
+      "schwarzerf@gmail.com"
+   ],
+   "schwarzerf@gmail.com" : [
+      "schwarzerf@gmail.com",
+      "Frederik Schwarzer"
    ],
    "schwern@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "schwern@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1287,6 +1512,10 @@
    "simon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "simon@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "simon"
+   ],
+   "simula67@gmail.com" : [
+      "simula67@gmail.com",
+      "Joji Antony"
    ],
    "skids@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "skids@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1339,6 +1568,10 @@
       "stevan@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "stevan"
    ],
+   "steve.mynott@gmail.com" : [
+      "steve.mynott@gmail.com",
+      "Steve Mynott"
+   ],
    "sunnavy@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "sunnavy@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "sunnavy"
@@ -1370,9 +1603,12 @@
       "tedv@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "tedv"
    ],
+   "tene@allalone.org" : [
+      "tene@allalone.org",
+      "Stephen Weeks"
+   ],
    "tene@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "tene@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "tene"
+      "tene@allalone.org"
    ],
    "tewk@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "tewk@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1393,6 +1629,10 @@
    "thundergnat@comcast.net" : [
       "thundergnat@comcast.net",
       "thundergnat"
+   ],
+   "tim.dolores@gmail.com" : [
+      "tim.dolores@gmail.com",
+      "Tim Smith"
    ],
    "timonator@perpetuum-immobile.de" : [
       "timonator@perpetuum-immobile.de",
@@ -1437,6 +1677,10 @@
    "vamped@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "vamped@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "vamped"
+   ],
+   "vendethiel@hotmail.fr" : [
+      "vendethiel@hotmail.fr",
+      "Nami-Doc"
    ],
    "viirya@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "viirya@c213334d-75ef-0310-aa23-eaa082d1ae64",
