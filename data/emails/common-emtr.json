@@ -570,6 +570,10 @@
       "chip@pobox.com",
       "Chip Salzenberg"
    ],
+   "chris@bingosnet.co.uk" : [
+      "chris@bingosnet.co.uk",
+      "Chris 'BinGOs' Williams"
+   ],
    "chris@chrisdolan.net" : [
       "chris@chrisdolan.net",
       "Chris Dolan"
@@ -1254,6 +1258,9 @@
       "johnrizzo1@gmail.com",
       "John Rizzo"
    ],
+   "jonathan@edument.se" : [
+      "jnthn@jnthn.net"
+   ],
    "jonathan@leto.net" : [
       "jonathan@leto.net",
       "Jonathan \"Duke\" Leto"
@@ -1327,6 +1334,10 @@
    "kentfredric@gmail.com" : [
       "kentfredric@gmail.com",
       "Kent Fredric"
+   ],
+   "khatar@phear.org" : [
+      "khatar@phear.org",
+      "Marc Chantreux"
    ],
    "kjwcode@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "kjwcode@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1589,8 +1600,7 @@
       "Melvin Smith"
    ],
    "mestre.smash@gmail.com" : [
-      "mestre.smash@gmail.com",
-      "Nuno 'smash' Carvalho"
+      "smash@cpan.org"
    ],
    "metaperl@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "metaperl@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1751,6 +1761,10 @@
    "nol888@gmail.com" : [
       "nol888@gmail.com",
       "Nolan Lum"
+   ],
+   "norbi@nix.hu" : [
+      "norbi@nix.hu",
+      "Norbert Buchmuller"
    ],
    "nothingmuch@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "nothingmuch@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -2075,6 +2089,10 @@
       "rooneg@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "rooneg"
    ],
+   "root+github@retupmoca.com" : [
+      "root+github@retupmoca.com",
+      "Andrew Egeler"
+   ],
    "root@charon.clarku.edu" : [
       "root@charon.clarku.edu",
       "root"
@@ -2138,6 +2156,10 @@
    "sasho@ubuntu.(none)" : [
       "sasho@ubuntu.(none)",
       "Sasho"
+   ],
+   "schwab@linux-m68k.org" : [
+      "schwab@linux-m68k.org",
+      "Andreas Schwab"
    ],
    "schwab@suse.de" : [
       "schwab@suse.de",
@@ -2226,7 +2248,7 @@
    ],
    "smash@cpan.org" : [
       "smash@cpan.org",
-      "smashz"
+      "Nuno Carvalho"
    ],
    "smpeters@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "smpeters@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -2287,7 +2309,10 @@
       "sunnavy"
    ],
    "svatsan@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "svatsan@c213334d-75ef-0310-aa23-eaa082d1ae64",
+      "svatsan@users.noreply.github.com"
+   ],
+   "svatsan@users.noreply.github.com" : [
+      "svatsan@users.noreply.github.com",
       "svatsan"
    ],
    "sygnowski@gmail.com" : [

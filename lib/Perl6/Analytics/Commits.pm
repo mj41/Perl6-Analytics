@@ -102,8 +102,9 @@ sub get_author_committer_tr_closure {
 		mu => 'common-emtr',
 		specs => 'common-emtr',
 		roast => 'common-emtr',
-		parrot => 'parrot',
-		rakudo => 'rakudo',
+		parrot => 'common-emtr',
+		rakudo => 'common-emtr',
+		moarvm => 'common-emtr',
 	} unless exists $self->{tr_emails_data_map};
 
 	if ( exists $self->{tr_emails_data_map}{$project_alias} ) {
