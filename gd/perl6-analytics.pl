@@ -25,11 +25,12 @@ my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
 
 my $dash_identifier = 'abv26SHOaI4O';
 
-# maql
+# maql - base
 $s->run_maql_for_dataset(
 	dataset => [ @datanames ],
 	maql_dir => $base_data_def_dir,
 );
+# maql - plus
 $s->run_maql_for_dataset(
 	dataset => [ @datanames_plus ],
 	maql_dir => $plus_data_def_dir,
