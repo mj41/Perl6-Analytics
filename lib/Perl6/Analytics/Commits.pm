@@ -60,55 +60,75 @@ sub get_to_sub_project_tr_closure {
 }
 
 sub repo_emails_fpath {
-	my ( $self, $project_alias ) = @_;
-	return File::Spec->catfile( 'data', 'emails', $project_alias.'.json' );
+	my ( $self, $base_fname ) = @_;
+	return File::Spec->catfile( 'data', 'emails', $base_fname.'.json' );
 }
 
 sub load_repo_emails_tr {
-	my ( $self, $project_alias ) = @_;
+	my ( $self, $project_alias, $base_fname ) = @_;
+	$base_fname //= $project_alias;
 
-	my $projects_db = JSON::InFile->new(
-		fpath => $self->repo_emails_fpath($project_alias),
-		verbose_level => $self->{vl}
-	);
-	$self->{repo_emails_tr} = $projects_db->load();
-	return $self->{repo_emails_tr};
+	$self->{repo_emails_tr} = {};
+	$self->{repo_emails_tr}{fpath} = $self->repo_emails_fpath( $base_fname );
+	if ( -e $self->{repo_emails_tr}{fpath} ) {
+		my $projects_db = JSON::InFile->new(
+			fpath => $self->{repo_emails_tr}{fpath},
+			verbose_level => $self->{vl}
+		);
+		$self->{repo_emails_tr}{data} = $projects_db->load();
+	} else {
+		$self->{repo_emails_tr}{data} = {};
+	}
+	return $self->{repo_emails_tr}{data};
 }
 
 sub one_project_finished {
 	my ( $self, $project_alias, $project_name ) = @_;
 
-	if ( defined $self->{repo_emails_tr} ) {
+	if ( exists $self->{repo_emails_tr} ) {
 		my $projects_db = JSON::InFile->new(
-			fpath => $self->repo_emails_fpath($project_alias),
+			fpath => $self->{repo_emails_tr}{fpath},
 			verbose_level => $self->{vl}
 		);
-		$projects_db->save( $self->{repo_emails_tr} );
+		$projects_db->save( $self->{repo_emails_tr}{data} );
+		delete $self->{repo_emails_tr};
 	}
 }
 
 sub get_author_committer_tr_closure {
 	my ( $self, $project_alias, $project_name ) = @_;
 
-	if ( $project_alias eq 'mu' ) {
-		my $repo_emails_tr = $self->load_repo_emails_tr($project_alias);
+	$self->{tr_emails_data_map} = {
+		mu => 'common-emtr',
+		specs => 'common-emtr',
+		roast => 'common-emtr',
+		parrot => 'parrot',
+		rakudo => 'rakudo',
+	} unless exists $self->{tr_emails_data_map};
+
+	if ( exists $self->{tr_emails_data_map}{$project_alias} ) {
+
+		my $repo_emails_tr_data = $self->load_repo_emails_tr(
+			$project_alias,
+			$self->{tr_emails_data_map}{$project_alias}
+		);
 		return sub {
 			my ( $a_name, $a_email, $c_name, $c_email ) = @_;
 			# author
-			if ( exists $repo_emails_tr->{$a_email} ) {
-				( $a_email, $a_name ) = @{ $repo_emails_tr->{$a_email} };
-				$a_name = $repo_emails_tr->{$a_email}[1] unless $a_email;
+			if ( exists $repo_emails_tr_data->{$a_email} ) {
+				( $a_email, $a_name ) = @{ $repo_emails_tr_data->{$a_email} };
+				$a_name = $repo_emails_tr_data->{$a_email}[1] unless $a_email;
 			} else {
-				$repo_emails_tr->{$a_email} = [
+				$repo_emails_tr_data->{$a_email} = [
 					$a_email, $a_name
 				];
 			}
 			# committer
-			if ( exists $repo_emails_tr->{$c_email} ) {
-				( $c_email, $c_name ) = @{ $repo_emails_tr->{$c_email} };
-				$c_name = $repo_emails_tr->{$c_email}[1] unless $c_email;
+			if ( exists $repo_emails_tr_data->{$c_email} ) {
+				( $c_email, $c_name ) = @{ $repo_emails_tr_data->{$c_email} };
+				$c_name = $repo_emails_tr_data->{$c_email}[1] unless $c_email;
 			} else {
-				$repo_emails_tr->{$c_email} = [
+				$repo_emails_tr_data->{$c_email} = [
 					$c_email, $c_name
 				];
 			}
