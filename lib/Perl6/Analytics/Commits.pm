@@ -85,7 +85,7 @@ sub load_repo_emails_tr {
 sub one_project_finished {
 	my ( $self, $project_alias, $project_name ) = @_;
 
-	if ( exists $self->{repo_emails_tr} ) {
+	if ( defined $self->{repo_emails_tr} ) {
 		my $projects_db = JSON::InFile->new(
 			fpath => $self->{repo_emails_tr}{fpath},
 			verbose_level => $self->{vl}
