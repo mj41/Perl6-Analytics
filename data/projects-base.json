@@ -22,7 +22,7 @@
    },
    "features" : {
       "flavours" : [],
-      "name" : "Perl 6 features",
+      "name" : "features",
       "source_url" : "git://github.com/perl6/features.git",
       "type" : "others",
       "url" : "http://perl6.org/compilers/features"
@@ -76,7 +76,7 @@
    },
    "roast" : {
       "flavours" : [],
-      "name" : "Perl 6 test suite",
+      "name" : "roast",
       "source_url" : "git://github.com/perl6/roast.git",
       "type" : "others",
       "url" : "https://github.com/perl6/roast"
@@ -97,14 +97,14 @@
    },
    "std" : {
       "flavours" : [],
-      "name" : "std",
+      "name" : "STD",
       "source_url" : "git://github.com/perl6/std.git",
       "type" : "others",
       "url" : "https://github.com/perl6/std"
    },
    "winxed" : {
       "flavours" : [],
-      "name" : "winxed",
+      "name" : "Winxed",
       "source_url" : "git://github.com/NotFound/winxed.git",
       "type" : "others",
       "url" : "https://github.com/NotFound/winxed"
