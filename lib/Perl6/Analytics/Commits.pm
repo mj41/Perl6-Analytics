@@ -12,6 +12,7 @@ use base qw(
 
 use Git::Analytics;
 use Git::Repository::LogRaw;
+use JSON::InFile;
 
 
 sub prepare_dirs {
@@ -55,6 +56,67 @@ sub get_to_sub_project_tr_closure {
 		}
 	}
 
+	return undef;
+}
+
+sub repo_emails_fpath {
+	my ( $self, $project_alias ) = @_;
+	return File::Spec->catfile( 'data', 'emails', $project_alias.'.json' );
+}
+
+sub load_repo_emails_tr {
+	my ( $self, $project_alias ) = @_;
+
+	my $projects_db = JSON::InFile->new(
+		fpath => $self->repo_emails_fpath($project_alias),
+		verbose_level => $self->{vl}
+	);
+	$self->{repo_emails_tr} = $projects_db->load();
+	return $self->{repo_emails_tr};
+}
+
+sub one_project_finished {
+	my ( $self, $project_alias, $project_name ) = @_;
+
+	if ( defined $self->{repo_emails_tr} ) {
+		my $projects_db = JSON::InFile->new(
+			fpath => $self->repo_emails_fpath($project_alias),
+			verbose_level => $self->{vl}
+		);
+		$projects_db->save( $self->{repo_emails_tr} );
+	}
+}
+
+sub get_author_committer_tr_closure {
+	my ( $self, $project_alias, $project_name ) = @_;
+
+	if ( $project_alias eq 'mu' ) {
+		my $repo_emails_tr = $self->load_repo_emails_tr($project_alias);
+		return sub {
+			my ( $a_name, $a_email, $c_name, $c_email ) = @_;
+			# author
+			if ( exists $repo_emails_tr->{$a_email} ) {
+				( $a_email, $a_name ) = @{ $repo_emails_tr->{$a_email} };
+				$a_name = $repo_emails_tr->{$a_email}[1] unless $a_email;
+			} else {
+				$repo_emails_tr->{$a_email} = [
+					$a_email, $a_name
+				];
+			}
+			# committer
+			if ( exists $repo_emails_tr->{$c_email} ) {
+				( $c_email, $c_name ) = @{ $repo_emails_tr->{$c_email} };
+				$c_name = $repo_emails_tr->{$c_email}[1] unless $c_email;
+			} else {
+				$repo_emails_tr->{$c_email} = [
+					$c_email, $c_name
+				];
+			}
+			return ( $a_name, $a_email, $c_name, $c_email );
+		}
+	}
+
+	$self->{repo_emails_tr} = undef;
 	return undef;
 }
 
@@ -110,8 +172,10 @@ sub process_and_save_csv {
 			$project_name,
 			$git_lograw_obj,
 			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias, $project_name ),
+			author_committer_tr_closure => $self->get_author_committer_tr_closure( $project_alias, $project_name ),
 			git_log_args => $args{git_log_args} // {},
 		);
+		$self->one_project_finished( $project_alias, $project_name );
 		$num++;
 	}
 
