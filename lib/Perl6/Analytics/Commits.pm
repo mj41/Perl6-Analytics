@@ -37,7 +37,7 @@ sub get_to_sub_project_tr_closure {
 			return 'roast'        if $fpath =~ m{^t/spec/};
 			return 'specs'        if $fpath =~ m{^docs/Perl6/Spec/};
 			return 'perl6.org'    if $fpath =~ m{^docs/feather/perl6.org/};
-			return 'std'          if $fpath =~ m{^src/perl6/};
+			return 'STD'          if $fpath =~ m{^src/perl6/};
 			return 'p5-modules'   if $fpath =~ m{^perl5/};
 			return 'evalbot'      if $fpath =~ m{^misc/evalbot/};
 			# others
