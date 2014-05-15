@@ -237,13 +237,6 @@
       "source_url" : "git://github.com/colomon/Math-Vector.git",
       "type" : "module"
    },
-   "MiniDBI" : {
-      "description" : "a subset of Perl 5 DBI ported to Perl 6 to use while experts build the Real Deal",
-      "flavours" : [],
-      "name" : "MiniDBI",
-      "source_url" : "git://github.com/mberends/MiniDBI.git",
-      "type" : "module"
-   },
    "MuEvent" : {
       "description" : "An AnyEvent lookalike",
       "flavours" : [],
@@ -547,7 +540,7 @@
    },
    "book" : {
       "flavours" : [],
-      "name" : "Perl 6 Book",
+      "name" : "book",
       "source_url" : "git://github.com/perl6/book.git",
       "type" : "docs",
       "url" : "https://github.com/perl6/book"
@@ -589,7 +582,7 @@
    },
    "ecosystem" : {
       "flavours" : [],
-      "name" : "Perl 6 ecosystem",
+      "name" : "ecosystem",
       "source_url" : "git://github.com/perl6/ecosystem.git",
       "type" : "vm",
       "url" : "http://modules.perl6.org"
@@ -610,7 +603,7 @@
    },
    "features" : {
       "flavours" : [],
-      "name" : "Perl 6 features",
+      "name" : "features",
       "source_url" : "git://github.com/perl6/features.git",
       "type" : "others",
       "url" : "http://perl6.org/compilers/features"
@@ -770,9 +763,9 @@
       "type" : "module"
    },
    "messagepack-pm6" : {
-      "description" : "[old] A MessagePack implementation written in Perl 6",
+      "description" : "A MessagePack implementation",
       "flavours" : [],
-      "name" : "messagepack-pm6",
+      "name" : "MessagePack",
       "source_url" : "git://github.com/uasi/messagepack-pm6.git",
       "type" : "module"
    },
@@ -805,9 +798,9 @@
       "url" : "https://github.com/sorear/niecza"
    },
    "november" : {
-      "description" : "[old] A wiki engine written in Perl 6",
+      "description" : "A wiki engine written in Perl 6",
       "flavours" : [],
-      "name" : "november",
+      "name" : "November",
       "source_url" : "git://github.com/viklund/november.git",
       "type" : "module"
    },
@@ -1075,13 +1068,6 @@
       "flavours" : [],
       "name" : "Config::INI",
       "source_url" : "git://github.com/tadzik/perl6-Config-INI.git",
-      "type" : "module"
-   },
-   "perl6-Enc-MIME-Base64" : {
-      "description" : "MIME Base64 encoding for Perl 6 binary data and strings using any string encoding.",
-      "flavours" : [],
-      "name" : "Enc::MIME::Base64",
-      "source_url" : "git://github.com/ronaldxs/perl6-Enc-MIME-Base64.git",
       "type" : "module"
    },
    "perl6-File-Compare" : {
@@ -1469,7 +1455,7 @@
    },
    "roast" : {
       "flavours" : [],
-      "name" : "Perl 6 test suite",
+      "name" : "roast",
       "source_url" : "git://github.com/perl6/roast.git",
       "type" : "others",
       "url" : "https://github.com/perl6/roast"
@@ -1483,7 +1469,7 @@
    },
    "specs" : {
       "flavours" : [],
-      "name" : "Perl 6 specs",
+      "name" : "specs",
       "source_url" : "git://github.com/perl6/specs.git",
       "type" : "docs",
       "url" : "https://github.com/perl6/specs"
@@ -1595,7 +1581,7 @@
    },
    "winxed" : {
       "flavours" : [],
-      "name" : "winxed",
+      "name" : "Winxed",
       "source_url" : "git://github.com/NotFound/winxed.git",
       "type" : "others",
       "url" : "https://github.com/NotFound/winxed"
