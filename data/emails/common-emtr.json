@@ -111,7 +111,7 @@
    ],
    "Limbic_Region@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Limbic_Region@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "Limbic_Region"
+      "Limbic Region"
    ],
    "Martin.vGagern@gmx.net" : [
       "Martin.vGagern@gmx.net",
@@ -133,6 +133,10 @@
       "Ovid@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "Ovid"
    ],
+   "PAF01143@nifty.ne.jp" : [
+      "PAF01143@nifty.ne.jp",
+      "Yoshikuni Jujo"
+   ],
    "Paolo@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Paolo@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "Paolo"
@@ -143,7 +147,7 @@
    ],
    "RichiH@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "RichiH@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "RichiH"
+      "Richi H."
    ],
    "Sage@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Sage@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -151,7 +155,7 @@
    ],
    "SamB@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "SamB@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "SamB"
+      "Sam B."
    ],
    "SolidState@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "SolidState@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -221,7 +225,7 @@
    ],
    "afiskon@gmail.com" : [
       "afiskon@gmail.com",
-      "Alexandr A Alexeev"
+      "Alexandr A. Alexeev"
    ],
    "agentz@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "agentz@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -240,12 +244,10 @@
       "Aaron Sherman"
    ],
    "ajs@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "ajs@ajs.com",
-      "ajs"
+      "ajs@ajs.com"
    ],
    "ajs@cogolabs.com" : [
-      "ajs@cogolabs.com",
-      "Aaron Sherman"
+      "ajs@ajs.com",
    ],
    "akarger@cgr.harvard.edu" : [
       "akarger@cgr.harvard.edu",
@@ -291,7 +293,7 @@
    ],
    "ambs@cpan.org" : [
       "ambs@cpan.org",
-      "Alberto Manuel Brandao Simoes"
+      "Alberto M. B. Simoes"
    ],
    "amir.aharoni@mail.huji.ac.il" : [
       "amir.aharoni@mail.huji.ac.il",
@@ -344,8 +346,7 @@
       "Anthony Parsons"
    ],
    "ant@specialops.ath.cx" : [
-      "ant@flussence.eu",
-      "Anthony Parsons"
+      "ant@flussence.eu"
    ],
    "anteusz@freemail.hu" : [
       "anteusz@freemail.hu",
@@ -358,6 +359,10 @@
    "arbelo@gmail.com" : [
       "arbelo@gmail.com",
       "Daniel Arbelo Arrocha"
+   ],
+   "arcterus@mail.com" : [
+      "arcterus@mail.com",
+      "Arcterus"
    ],
    "arhuman@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "arhuman@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -387,6 +392,10 @@
    "ask@develooper.com" : [
       "ask@develooper.com",
       "Ask BjÃ¸rn Hansen"
+   ],
+   "atrodo@atrodo.org" : [
+      "atrodo@atrodo.org",
+      "Jon Gentle"
    ],
    "atroxaper@Mac-Pro-atroxaper.local" : [
       "atroxaper@Mac-Pro-atroxaper.local",
@@ -974,7 +983,7 @@
    ],
    "djanatyn@gmail.com" : [
       "djanatyn@gmail.com",
-      "Jonathan"
+      "Jonathan Strickland"
    ],
    "dlo@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "dlo@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1123,6 +1132,10 @@
       "felliott@virginia.edu",
       "Fitz Elliott"
    ],
+   "fernozzle@htwins.net" : [
+      "fernozzle@htwins.net",
+      "Michael Huang"
+   ],
    "ferreira@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "ferreira@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "ferreira"
@@ -1155,8 +1168,7 @@
       "flounder99"
    ],
    "flussence+git@gmail.com" : [
-      "flussence+git@gmail.com",
-      "Anthony Parsons"
+      "flussence@gmail.com"
    ],
    "flussence@gmail.com" : [
       "flussence@gmail.com",
@@ -1606,6 +1618,18 @@
       "kentfredric@gmail.com",
       "Kent Fredric"
    ],
+   "kentrak@gmail.com" : [
+      "kentrak@gmail.com",
+      "Kevan Benson"
+   ],
+   "kevin@ubuntu-vm.(none)" : [
+      "kevin@ubuntu-vm.(none)",
+      "Kevin"
+   ],
+   "khairul@d31e2699-5ff4-0310-a27c-f18f2fbe73fe" : [
+      "khairul@d31e2699-5ff4-0310-a27c-f18f2fbe73fe",
+      "khairul"
+   ],
    "khatar@phear.org" : [
       "khatar@phear.org",
       "Marc Chantreux"
@@ -1707,6 +1731,10 @@
    "leto@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jonathan@leto.net"
    ],
+   "lewis@wall.org" : [
+      "lewis@wall.org",
+      "quietfanatic"
+   ],
    "lichtkind@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "lichtkind@cpan.org"
    ],
@@ -1744,6 +1772,9 @@
    "lt@toetsch.at" : [
       "lt@toetsch.at",
       "Leopold Toetsch"
+   ],
+   "luben@debian.mail.bg" : [
+      "karavelov@spnet.net"
    ],
    "lucs@pobox.com" : [
       "lucs@pobox.com",
@@ -1783,6 +1814,10 @@
       "lysdexsik@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "lysdexsik"
    ],
+   "m@rtinolsen.net" : [
+      "m@rtinolsen.net",
+      "Martin Olsen"
+   ],
    "machack666@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "machack666@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "machack666"
@@ -1791,6 +1826,10 @@
       "maik@mm-double.de",
       "Maik Hentsche"
    ],
+   "mail@froggs.de" : [
+      "mail@froggs.de",
+      "Tobias Leich"
+   ],
    "malaire@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "malaire@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "malaire"
@@ -1798,6 +1837,10 @@
    "malon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "malon@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "malon"
+   ],
+   "marcus@nordaaker.com" : [
+      "marcus@nordaaker.com",
+      "Marcus Ramberg"
    ],
    "mariano@hal.(none)" : [
       "mariano@hal.(none)",
@@ -1829,6 +1872,10 @@
    "martin@localhost.localdomain" : [
       "mberends@flashmail.com"
    ],
+   "martin@martinkjeldsen.dk" : [
+      "martin@martinkjeldsen.dk",
+      "Martin Kjeldsen"
+   ],
    "martin@meee.(none)" : [
       "mberends@flashmail.com"
    ],
@@ -1843,8 +1890,7 @@
       "cmasak@gmail.com"
    ],
    "masak@farmjw088.farmbio.uu.se" : [
-      "masak@farmjw088.farmbio.uu.se",
-      "masak"
+      "cmasak@gmail.com"
    ],
    "masak@juno.local" : [
       "cmasak@gmail.com"
@@ -2236,6 +2282,10 @@
    "perl-dev@jall.org" : [
       "perl-dev@jall.org",
       "Mike Lambert"
+   ],
+   "perl6-git@uniejo.dk" : [
+      "perl6-git@uniejo.dk",
+      "Erik Johansen"
    ],
    "perl6git@uniejo.dk" : [
       "perl6git@uniejo.dk",
@@ -2646,6 +2696,10 @@
       "seano@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "seano"
    ],
+   "shachaf@gmail.com" : [
+      "shachaf@gmail.com",
+      "Shachaf Ben-Kiki"
+   ],
    "shapr@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "shapr@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "shapr"
@@ -2704,6 +2758,10 @@
    "sirrobert@gmail.com" : [
       "sirrobert@gmail.com",
       "Sir Robert Burbridge"
+   ],
+   "sjn+gnurf@kaizendo.org" : [
+      "sjn+gnurf@kaizendo.org",
+      "Salve J. Nilsen"
    ],
    "skids@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "skids@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -2888,6 +2946,10 @@
    "timbus@timbox.(none)" : [
       "timbus@timbox.(none)",
       "Jarrod"
+   ],
+   "timo@localhost.localdomain" : [
+      "timo@localhost.localdomain",
+      "Timo Paulssen"
    ],
    "timonator@perpetuum-immobile.de" : [
       "timonator@perpetuum-immobile.de",
@@ -3082,6 +3144,10 @@
    "yiyihu@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "yiyihu@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "yiyihu"
+   ],
+   "zahatski@gmail.com" : [
+      "zahatski@gmail.com",
+      "Aliaksandr Zahatski"
    ],
    "zaki.mughal@gmail.com" : [
       "zaki.mughal@gmail.com",
