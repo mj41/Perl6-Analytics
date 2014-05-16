@@ -1442,6 +1442,7 @@
       "url" : "https://github.com/perl6/Pugs.hs"
    },
    "rakudo" : {
+      "branch" : "nom",
       "flavours" : [
          "Rakudo",
          "Rakudo MoarVM",

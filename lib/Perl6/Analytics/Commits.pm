@@ -162,6 +162,8 @@ sub process_and_save_csv {
 	);
 	$ga_obj->print_csv_headers();
 
+	my $git_log_args_base = $args{git_log_args} // {};
+
 	my $num = 1;
 	foreach my $project_alias ( sort keys %$projects ) {
 		if ( $args{skip} ) {
@@ -171,11 +173,13 @@ sub process_and_save_csv {
 
 		my $repo_url = $projects->{$project_alias}{source_url};
 		my $project_name = $projects->{$project_alias}{name};
+		my $branch = $projects->{$project_alias}{branch} // 'master';
 		my $base_repo_obj = $self->git_repo_obj(
 			$project_alias,
 			repo_url => $repo_url,
 			skip_fetch => $skip_fetch,
 		);
+
 		my $git_lograw_obj = Git::Repository::LogRaw->new( $base_repo_obj, $self->{vl} );
 		$ga_obj->process_one(
 			$project_alias,
@@ -183,7 +187,10 @@ sub process_and_save_csv {
 			$git_lograw_obj,
 			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias, $project_name ),
 			author_committer_tr_closure => $self->get_author_committer_tr_closure( $project_alias, $project_name ),
-			git_log_args => $args{git_log_args} // {},
+			git_log_args => {
+				( %$git_log_args_base ),
+				branch => $branch,
+			},
 		);
 		$self->one_project_finished( $project_alias, $project_name );
 		$num++;
