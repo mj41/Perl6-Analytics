@@ -1434,6 +1434,13 @@
       "source_url" : "git://github.com/zag/plosurin.git",
       "type" : "module"
    },
+   "pugs.hs" : {
+      "flavours" : [],
+      "name" : "Pugs.hs",
+      "source_url" : "git://github.com/perl6/Pugs.hs.git",
+      "type" : "compiler",
+      "url" : "https://github.com/perl6/Pugs.hs"
+   },
    "rakudo" : {
       "flavours" : [
          "Rakudo",
