@@ -20,12 +20,33 @@
       "type" : "docs",
       "url" : "https://github.com/perl6/book"
    },
+   "course" : {
+      "flavours" : [],
+      "name" : "course",
+      "source_url" : "git://github.com/perl6/course.git",
+      "type" : "docs",
+      "url" : "http://github.com/perl6/course"
+   },
    "ecosystem" : {
       "flavours" : [],
       "name" : "ecosystem",
       "source_url" : "git://github.com/perl6/ecosystem.git",
       "type" : "vm",
       "url" : "http://modules.perl6.org"
+   },
+   "evalbot" : {
+      "flavours" : [],
+      "name" : "evalbot",
+      "source_url" : "git://github.com/perl6/evalbot.git",
+      "type" : "others",
+      "url" : "https://github.com/perl6/evalbot"
+   },
+   "faq" : {
+      "flavours" : [],
+      "name" : "faq",
+      "source_url" : "git://github.com/perl6/faq.git",
+      "type" : "docs",
+      "url" : "http://github.com/perl6/faq"
    },
    "features" : {
       "flavours" : [],
@@ -62,12 +83,26 @@
       "type" : "compiler_part",
       "url" : "https://github.com/perl6/nqp"
    },
+   "nqp-rx" : {
+      "flavours" : [],
+      "name" : "nqp-rx",
+      "source_url" : "git://github.com/perl6/nqp-rx.git",
+      "type" : "docs",
+      "url" : "http://github.com/perl6/nqp-rx"
+   },
    "parrot" : {
       "flavours" : [],
       "name" : "Parrot",
       "source_url" : "git://github.com/parrot/parrot.git",
       "type" : "vm",
       "url" : "http://www.parrot.org"
+   },
+   "perl6-examples" : {
+      "flavours" : [],
+      "name" : "perl6-examples",
+      "source_url" : "git://github.com/perl6/perl6-examples.git",
+      "type" : "others",
+      "url" : "http://github.com/perl6/perl6-examples"
    },
    "pugs.hs" : {
       "flavours" : [],
@@ -116,6 +151,13 @@
       "source_url" : "git://github.com/perl6/std.git",
       "type" : "others",
       "url" : "https://github.com/perl6/std"
+   },
+   "tablets" : {
+      "flavours" : [],
+      "name" : "tablets",
+      "source_url" : "git://github.com/perl6/tablets.git",
+      "type" : "docs",
+      "url" : "http://github.com/perl6/tablets"
    },
    "winxed" : {
       "flavours" : [],
