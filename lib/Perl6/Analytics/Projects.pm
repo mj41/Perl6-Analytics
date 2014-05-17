@@ -166,7 +166,7 @@ sub add_p6_modules {
 
 	foreach my $repo_name ( keys %$mods_info ) {
 		if ( exists $self->{pr_info}{$repo_name} ) {
-			croak "Duplicate repo name 'repo_name'.\n";
+			croak "Duplicate repo name '$repo_name'.\n";
 			next;
 		}
 		$self->{pr_info}{$repo_name} = $mods_info->{$repo_name};
