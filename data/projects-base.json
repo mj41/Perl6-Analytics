@@ -6,6 +6,13 @@
       "type" : "others",
       "url" : "https://github.com/jnthn/6model"
    },
+   "Perlito" : {
+      "flavours" : [],
+      "name" : "Perlito",
+      "source_url" : "git://github.com/fglock/Perlito.git",
+      "type" : "compiler",
+      "url" : "http://www.perlito.org"
+   },
    "book" : {
       "flavours" : [],
       "name" : "book",

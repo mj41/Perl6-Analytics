@@ -247,7 +247,7 @@
       "ajs@ajs.com"
    ],
    "ajs@cogolabs.com" : [
-      "ajs@ajs.com",
+      "ajs@ajs.com"
    ],
    "akarger@cgr.harvard.edu" : [
       "akarger@cgr.harvard.edu",
@@ -351,6 +351,10 @@
    "anteusz@freemail.hu" : [
       "anteusz@freemail.hu",
       "jaffa4"
+   ],
+   "anthony.hinsinger@univ-pau.fr" : [
+      "anthony.hinsinger@univ-pau.fr",
+      "Anthony Hinsinger"
    ],
    "arathorn@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "arathorn@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -822,6 +826,10 @@
       "cosmicnet@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "cosmicnet"
    ],
+   "creaktive@gmail.com" : [
+      "creaktive@gmail.com",
+      "Stanislaw Pusep"
+   ],
    "creiss@cc.gatech.edu" : [
       "creiss@cc.gatech.edu",
       "Charles Reiss"
@@ -1141,8 +1149,14 @@
       "ferreira"
    ],
    "fglock@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "fglock@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "fglock"
+      "fglock@gmail.com"
+   ],
+   "fglock@feather.perl6.nl" : [
+      "fglock@gmail.com"
+   ],
+   "fglock@gmail.com" : [
+      "fglock@gmail.com",
+      "Flavio S. Glock"
    ],
    "filip.sergot@allegrogroup.com" : [
       "filip@sergot.pl"
@@ -1413,6 +1427,10 @@
    "jani@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jani@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "jani"
+   ],
+   "janus@fabams.nl" : [
+      "janus@fabams.nl",
+      "Simon Bertrang"
    ],
    "jarrod.funnell@gmail.com" : [
       "jarrod.funnell@gmail.com",
@@ -2117,6 +2135,10 @@
       "neuromu@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "neuromu"
    ],
+   "nferraz@gmail.com" : [
+      "nferraz@gmail.com",
+      "Nelson Ferraz"
+   ],
    "nick.glencross@gmail.com" : [
       "nick.glencross@gmail.com",
       "Nick Glencross"
@@ -2742,6 +2764,10 @@
    "siddhantsaraf@gmail.com" : [
       "siddhantsaraf@gmail.com",
       "Siddhant Saraf"
+   ],
+   "simon.bertrang@booking.com" : [
+      "simon.bertrang@booking.com",
+      "Simon Bertrang"
    ],
    "simon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "simon@c213334d-75ef-0310-aa23-eaa082d1ae64",

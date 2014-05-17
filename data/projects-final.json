@@ -370,6 +370,13 @@
       "source_url" : "git://github.com/ugexe/Perl6-Text--Levenshtein--Damerau.git",
       "type" : "module"
    },
+   "Perlito" : {
+      "flavours" : [],
+      "name" : "Perlito",
+      "source_url" : "git://github.com/fglock/Perlito.git",
+      "type" : "compiler",
+      "url" : "http://www.perlito.org"
+   },
    "Phaser-ATEXIT" : {
       "description" : "Simple implementation of ATEXIT for Perl 6",
       "flavours" : [],
