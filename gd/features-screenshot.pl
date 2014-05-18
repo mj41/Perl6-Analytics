@@ -15,7 +15,7 @@ $dr->get( $s->api_url );
 $dr->get( $s->embeded_dashboard_url( identifier => $dash_identifier ) );
 sleep 10;
 
-my $fpath = $s->script_rep_fpath("../../Perl-6-GD/export/Summary - Compilers' features - GoodData.png");
+my $fpath = $s->script_rel_fpath("../../Perl-6-GD/export/Summary - Compilers' features - GoodData.png");
 print "Screenshot: '$fpath'\n";
 screenshot( $dr, $fpath );
 $dr->quit();

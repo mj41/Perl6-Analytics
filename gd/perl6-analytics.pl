@@ -79,24 +79,26 @@ if ( $do_uploads && $do_addon_features ) {
 	$s->dataset_upload(
 		dataset => 'features',
 		manifest_dir => $plus_data_def_dir,
-		csv_rel_fpath => '../../../../dalsi/perl6-mj-features/data/features.csv'
+		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'features.csv' ),
 	);
 
-	use JSON::XS;
-	my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);
+	if ( 0 ) {
+		use JSON::XS;
+		my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);
 
-	my $meta_fpath = $s->script_rel_fpath('..','data-out','features-meta.json');
-	my $meta_json = File::Slurp::read_file( $meta_fpath );
-	my $meta_data = $json_obj->decode( $meta_json );
-	my $text = '['.$meta_data->{commiter_gmtime_str}.'|'.$meta_data->{url}.']';
-	print "Meta loaded from '$meta_fpath' and text '$text' prepared.\n";
+		my $meta_fpath = $s->script_rel_fpath('..','data-out','features-meta.json');
+		my $meta_json = File::Slurp::read_file( $meta_fpath );
+		my $meta_data = $json_obj->decode( $meta_json );
+		my $text = '['.$meta_data->{commiter_gmtime_str}.'|'.$meta_data->{url}.']';
+		print "Meta loaded from '$meta_fpath' and text '$text' prepared.\n";
 
-	my $dash_obj = $s->get_first_obj_content_by( identifier => $dash_identifier );
-	$self->update_dashboard_item(
-		$dash_obj,
-		{ tab_pos => 0, item_pos => 9 }, # todo - more dynamic aproach
-		{ text => $text },
-	);
-	#$s->dump_struct( 'dash_obj', $dash_obj );
-	$s->cl_post( $dash_obj->{projectDashboard}{meta}{uri}, $dash_obj );
+		my $dash_obj = $s->get_first_obj_content_by( identifier => $dash_identifier );
+		$self->update_dashboard_item(
+			$dash_obj,
+			{ tab_pos => 0, item_pos => 9 }, # todo - more dynamic aproach
+			{ text => $text },
+		);
+		#$s->dump_struct( 'dash_obj', $dash_obj );
+		$s->cl_post( $dash_obj->{projectDashboard}{meta}{uri}, $dash_obj );
+	}
 }
