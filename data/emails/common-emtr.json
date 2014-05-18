@@ -2245,7 +2245,7 @@
    ],
    "nothingmuch@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "nothingmuch@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "nothingmuch"
+      "Yuval Kogman"
    ],
    "novus@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "novus@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -2534,12 +2534,14 @@
       "radus"
    ],
    "rafl@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "rafl@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "rafl"
+      "rafl@debian.org"
    ],
-   "rafl@debianforum.de" : [
+   "rafl@debian.org" : [
       "rafl@debianforum.de",
       "Florian Ragwitz"
+   ],
+   "rafl@debianforum.de" : [
+      "rafl@debian.org"
    ],
    "raiph.mellor@gmail.com" : [
       "raiph.mellor@gmail.com",
