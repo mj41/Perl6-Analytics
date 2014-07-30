@@ -135,27 +135,29 @@ sub add_p6_modules {
 		my $data = eval { $json_obj->decode( $meta ) };
 		if ( my $err = $@ ) {
 			print "Decoding meta failed: $@\n" if $self->{vl} >= 2;
+			next;
 		}
 		$self->dump('meta for '.$str_id, $data ) if $self->{vl} >= 8;
 
 		my $real_repo_url = $data->{'source-url'} // $data->{'repo-url'};
 		unless ( $real_repo_url ) {
-			croak "'source-url' nor 'repo-url' found for '$str_id'.\n";
+			print "'source-url' nor 'repo-url' found for '$str_id'.\n";
 			next;
 		}
 
-		my $real_repo_name;
-		unless ( ($real_repo_name) = $real_repo_url =~ m{([^/]+)\.git$}x ) {
-			croak "Can't parse source url '$real_repo_url'\n";
+		my ( $user_name, $real_repo_name );
+		unless ( ($user_name, $real_repo_name) = $real_repo_url =~ m{([^/]+)/([^/]+)\.git$}x ) {
+			print "Can't parse source url '$real_repo_url'\n";
 			next;
 		}
 
 		if ( exists $mods_info->{$real_repo_name} ) {
-			croak "Duplicate repo name '$real_repo_name' found for '$str_id'.\n";
+			print "Duplicate repo name '$real_repo_name' found for '$str_id'.\n";
 			next;
 		}
 		$mods_info->{$real_repo_name} = {
 			name => $data->{name},
+			user => $user_name,
 			description => $data->{description},
 			source_url => $real_repo_url,
 			type => 'module',
