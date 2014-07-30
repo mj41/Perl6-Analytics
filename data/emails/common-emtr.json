@@ -183,6 +183,14 @@
    "Worthington@.(none)" : [
       "jnthn@jnthn.net"
    ],
+   "Yanick@babyl.ca" : [
+      "Yanick@babyl.ca",
+      "Yanick Champoux"
+   ],
+   "ZYROz@users.noreply.github.com" : [
+      "ZYROz@users.noreply.github.com",
+      "ZYROz"
+   ],
    "Ziggy6@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "Ziggy6@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "Ziggy6"
@@ -642,15 +650,27 @@
       "buchetc@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "buchetc"
    ],
+   "c@c" : [
+      "carlin@theintersect.org"
+   ],
+   "carbin@users.noreply.github.com" : [
+      "carlin@theintersect.org"
+   ],
    "carlin-iris@glass.org.nz" : [
       "carlin@theintersect.org"
    ],
    "carlin@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "carlin@theintersect.org"
    ],
+   "carlin@os" : [
+      "carlin@theintersect.org"
+   ],
    "carlin@theintersect.org" : [
       "carlin@theintersect.org",
       "Carlin Bingham"
+   ],
+   "cb@viennan.net" : [
+      "carlin@theintersect.org"
    ],
    "cdavaz@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "cdavaz@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -735,11 +755,17 @@
       "cjeris@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "cjeris"
    ],
+   "cjfields@Chriss-MacBook-Pro.local" : [
+      "cjfields@bioperl.org"
+   ],
    "cjfields@bioperl.org" : [
       "cjfields@bioperl.org",
-      "cjfields"
+      "Chris Fields"
    ],
    "cjfields@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
+      "cjfields@bioperl.org"
+   ],
+   "cjfields@illinois.edu" : [
       "cjfields@bioperl.org"
    ],
    "ckuskie@sterling.net" : [
@@ -1382,6 +1408,10 @@
    "heather@cynede.net" : [
       "heather@cynede.net",
       "âeatÑer"
+   ],
+   "heather@live.ru" : [
+      "heather@live.ru",
+      "Heather"
    ],
    "helmut@wollmersdorfer.at" : [
       "helmut@wollmersdorfer.at",
@@ -2795,6 +2825,10 @@
       "scottp@dd.com.au",
       "Scott Penrose"
    ],
+   "scriplit@yahoo.com" : [
+      "scriplit@yahoo.com",
+      "ennio"
+   ],
    "scw@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "scw@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "scw"
@@ -2899,6 +2933,10 @@
    ],
    "smash@sbook.(none)" : [
       "smash@cpan.org"
+   ],
+   "smls75@gmail.com" : [
+      "smls75@gmail.com",
+      "smls"
    ],
    "smpeters@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "smpeters@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -3022,6 +3060,9 @@
       "teodozjan@gmail.com",
       "Kamil KuÅaga"
    ],
+   "teodozjan@users.noreply.github.com" : [
+      "teodozjan@gmail.com"
+   ],
    "tewk@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "tewk@tewk.com"
    ],
@@ -3066,12 +3107,14 @@
       "Jarrod"
    ],
    "timo@localhost.localdomain" : [
-      "timo@localhost.localdomain",
+      "timo@schmand.fritz.box"
+   ],
+   "timo@schmand.fritz.box" : [
+      "timo@schmand.fritz.box",
       "Timo Paulssen"
    ],
    "timonator@perpetuum-immobile.de" : [
-      "timonator@perpetuum-immobile.de",
-      "Timo Paulssen"
+      "timo@schmand.fritz.box"
    ],
    "tiw@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "tiw@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -3138,7 +3181,10 @@
       "Tyler Curtis"
    ],
    "uasi@99cm.org" : [
-      "uasi@99cm.org",
+      "uasi@uasi.jp"
+   ],
+   "uasi@uasi.jp" : [
+      "uasi@uasi.jp",
       "Tomoki Aonuma"
    ],
    "ug@skunkds.com" : [
@@ -3243,6 +3289,10 @@
       "work.tycho@gmail.com",
       "worktycho"
    ],
+   "x.fix@o2.pl" : [
+      "x.fix@o2.pl",
+      "Konrad Borowski"
+   ],
    "xenoterracide@gmail.com" : [
       "xenoterracide@gmail.com",
       "Caleb Cushing"
@@ -3277,6 +3327,10 @@
    "zaki.mughal@gmail.com" : [
       "zaki.mughal@gmail.com",
       "Zakariyya Mughal"
+   ],
+   "zengargoyle@gmail.com" : [
+      "zengargoyle@gmail.com",
+      "zengargoyle"
    ],
    "zerhash@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "zerhash@c213334d-75ef-0310-aa23-eaa082d1ae64",
