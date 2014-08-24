@@ -8,7 +8,10 @@ $s->get_or_create_project(
 	driver => $s->get_cfg('driver') || 'Pg',
 );
 
-my $dash_objs = $s->get_obj_contents_by( type => 'dashboard', title => qr/^CZPW/ );
+my $gdc_title_prefix = $s->get_cfg('gdc_title_prefix')
+	|| die "Dashboard prefix not provided (use --co 'gdc_title_prefix=PREF').";
+
+my $dash_objs = $s->get_obj_contents_by( type => 'dashboard', title => qr/^\Q$gdc_title_prefix\E/ );
 #$s->dump_struct('dashs', $dash_objs );
 
 my $dashs_info = [];
