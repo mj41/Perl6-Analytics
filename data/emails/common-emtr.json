@@ -1571,13 +1571,15 @@
       "jhorwitz@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "jhorwitz"
    ],
-   "jimmy@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "jimmy@c213334d-75ef-0310-aa23-eaa082d1ae64",
+   "jimmy.zhuo@weststarinc.co" : [
+      "jimmy.zhuo@weststarinc.co",
       "jimmy"
    ],
+   "jimmy@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
+      "jimmy.zhuo@weststarinc.co"
+   ],
    "jimmy@ubuntu.ubuntu-domain" : [
-      "jimmy@ubuntu.ubuntu-domain",
-      "jimmy"
+      "jimmy.zhuo@weststarinc.co"
    ],
    "jjuran@metamage.com" : [
       "jjuran@metamage.com",
@@ -1825,6 +1827,9 @@
       "lichtkind@cpan.org",
       "Herbert Breunung"
    ],
+   "lichtkind@herberts-mbp.lan" : [
+      "lichtkind@cpan.org"
+   ],
    "lidden@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "lidden@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "lidden"
@@ -1858,6 +1863,10 @@
    ],
    "luben@debian.mail.bg" : [
       "karavelov@spnet.net"
+   ],
+   "lucasbuchala@gmail.com" : [
+      "lucasbuchala@gmail.com",
+      "Lucas Buchala"
    ],
    "lucien@flare.home" : [
       "lucien@flare.home",
@@ -2909,7 +2918,10 @@
       "Sir Robert Burbridge"
    ],
    "sjn+gnurf@kaizendo.org" : [
-      "sjn+gnurf@kaizendo.org",
+      "sjn@cpan.org"
+   ],
+   "sjn@cpan.org" : [
+      "sjn@cpan.org",
       "Salve J. Nilsen"
    ],
    "skids@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
@@ -3358,5 +3370,9 @@
    "zoffix@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "zoffix@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "zoffix"
+   ],
+   "zyroz@users.noreply.github.com" : [
+      "zyroz@users.noreply.github.com",
+      "ZYROz"
    ]
 }

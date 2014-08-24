@@ -574,7 +574,7 @@
       "user" : "sergot"
    },
    "Test-ClientServer" : {
-      "description" : "Fork a single test file for testing network server/client code",
+      "description" : "Multithreading wrapper for testing network server/client code",
       "flavours" : [],
       "name" : "Test-ClientServer",
       "source_url" : "git://github.com/flussence/Test-ClientServer.git",
@@ -1138,6 +1138,14 @@
       "type" : "module",
       "user" : "FROGGS"
    },
+   "p6-Lingua-Number" : {
+      "description" : "Write cardinal and ordinal numbers with words in over fifty languages",
+      "flavours" : [],
+      "name" : "Lingua::Number",
+      "source_url" : "git://github.com/labster/p6-Lingua-Number.git",
+      "type" : "module",
+      "user" : "labster"
+   },
    "p6-Locale-US" : {
       "description" : "Two letter codes for identifying United States territories and vice versa",
       "flavours" : [],
@@ -1186,6 +1194,14 @@
       "type" : "module",
       "user" : "dagurval"
    },
+   "p6-algorithm-lcs" : {
+      "description" : "Implementation of the longest common subsequence algorithm",
+      "flavours" : [],
+      "name" : "Algorithm::LCS",
+      "source_url" : "git://github.com/hoelzro/p6-algorithm-lcs.git",
+      "type" : "module",
+      "user" : "hoelzro"
+   },
    "p6-datetime-format-w3cdtf" : {
       "description" : "A Perl 6 module to deal with W3CDTF dates",
       "flavours" : [],
@@ -1209,6 +1225,14 @@
       "source_url" : "git://github.com/labster/p6-file-directory-tree.git",
       "type" : "module",
       "user" : "labster"
+   },
+   "p6-io-string" : {
+      "description" : "Emulate file interface for strings",
+      "flavours" : [],
+      "name" : "IO::String",
+      "source_url" : "git://github.com/hoelzro/p6-io-string.git",
+      "type" : "module",
+      "user" : "hoelzro"
    },
    "p6-irc-utils" : {
       "description" : "A Perl 6 port of the IRC::Utils module",
