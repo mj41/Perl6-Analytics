@@ -89,11 +89,11 @@ sub add_p6_modules {
 	my @modules_meta_urls = $repo->run('show', 'HEAD:'.$ecos_fpath );
 
 	my $mod_base_info = [];
-	my $url_prefix = 'https://raw2.github.com';
+	my $url_prefix = '(?:raw2\.github\.com|raw\.githubusercontent\.com)';
 	foreach my $meta_url ( @modules_meta_urls ) {
 		if (
 			my (                  $author,  $repo_name, $branch, $meta_fpath ) = $meta_url =~ m{^
-				\Q$url_prefix\E / ([^/]+) / ([^/]+) /   ([^/]+) / (.*)
+				https:// $url_prefix / ([^/]+) / ([^/]+) /   ([^/]+) / (.*)
 			$}x
 		) {
 			push @$mod_base_info, {
