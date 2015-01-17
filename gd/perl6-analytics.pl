@@ -23,18 +23,20 @@ my @datanames_plus = qw(
 my $base_data_def_dir = $s->script_rel_fpath('../../Git-Analytics/gd/data-def');
 my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
 
-my $dash_identifier = 'abv26SHOaI4O';
+my $dash_identifier = 'aZ9Plococr2G';
 
-# maql - base
-$s->run_maql_for_dataset(
-	dataset => [ @datanames ],
-	maql_dir => $base_data_def_dir,
-);
-# maql - plus
-$s->run_maql_for_dataset(
-	dataset => [ @datanames_plus ],
-	maql_dir => $plus_data_def_dir,
-);
+if ( $do_uploads ) {
+	# maql - base
+	$s->run_maql_for_dataset(
+		dataset => [ @datanames ],
+		maql_dir => $base_data_def_dir,
+	);
+	# maql - plus
+	$s->run_maql_for_dataset(
+		dataset => [ @datanames_plus ],
+		maql_dir => $plus_data_def_dir,
+	);
+}
 
 # synchronize - delete all data
 if ( $do_synchronize ) {
@@ -75,7 +77,7 @@ if ( $do_uploads ) {
 }
 
 # features
-if ( $do_uploads && $do_addon_features ) {
+if ( $do_uploads ) {
 	$s->dataset_upload(
 		dataset => 'features',
 		manifest_dir => $plus_data_def_dir,
@@ -83,7 +85,7 @@ if ( $do_uploads && $do_addon_features ) {
 	);
 }
 
-if ( 0 && $do_uploads && $do_addon_features ) {
+if ( 1 && $do_addon_features ) {
 	use JSON::XS;
 	my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);
 
@@ -96,7 +98,7 @@ if ( 0 && $do_uploads && $do_addon_features ) {
 	my $dash_obj = $s->get_first_obj_content_by( identifier => $dash_identifier );
 	$self->update_dashboard_item(
 		$dash_obj,
-		{ tab_pos => 0, item_pos => 9 }, # todo - more dynamic aproach
+		{ tab_pos => 0, item_pos => 6 }, # todo - more dynamic aproach
 		{ text => $text },
 	);
 	#$s->dump_struct( 'dash_obj', $dash_obj );
