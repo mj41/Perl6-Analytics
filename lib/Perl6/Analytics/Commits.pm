@@ -187,7 +187,7 @@ sub process_and_save_csv {
 			to_sub_project_tr_closure => $self->get_to_sub_project_tr_closure( $project_alias, $project_name ),
 			author_committer_tr_closure => $self->get_author_committer_tr_closure( $project_alias, $project_name ),
 			git_log_args => {
-				( %$git_log_args_base ),
+				( %$git_log_args_base, reverse => 1 ),
 				branch => $branch,
 			},
 		);
