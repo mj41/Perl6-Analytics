@@ -66,9 +66,9 @@
       "description" : "BSON encoding/decoding, used in MongoDB drivers",
       "flavours" : [],
       "name" : "BSON",
-      "source_url" : "git://github.com/bbkr/BSON.git",
+      "source_url" : "git://github.com/MARTIMM/BSON.git",
       "type" : "module",
-      "user" : "bbkr"
+      "user" : "MARTIMM"
    },
    "Bailador" : {
       "description" : "A bare-bones Dancer port",
@@ -1122,9 +1122,9 @@
       "description" : "MongoDB driver",
       "flavours" : [],
       "name" : "MongoDB",
-      "source_url" : "git://github.com/bbkr/mongo-perl6-driver.git",
+      "source_url" : "git://github.com/MARTIMM/mongo-perl6-driver.git",
       "type" : "module",
-      "user" : "bbkr"
+      "user" : "MARTIMM"
    },
    "mu" : {
       "flavours" : [],
@@ -1558,6 +1558,14 @@
       "flavours" : [],
       "name" : "CSS::Module",
       "source_url" : "git://github.com/p6-css/perl6-CSS-Module.git",
+      "type" : "module",
+      "user" : "p6-css"
+   },
+   "perl6-CSS-Module-CSS3-Selectors" : {
+      "description" : "CSS3 Module Level 3 Selectos",
+      "flavours" : [],
+      "name" : "CSS::Module::CSS3::Selectors",
+      "source_url" : "git://github.com/p6-css/perl6-CSS-Module-CSS3-Selectors.git",
       "type" : "module",
       "user" : "p6-css"
    },
@@ -2015,6 +2023,14 @@
       "source_url" : "git://github.com/cosimo/perl6-string-crc32.git",
       "type" : "module",
       "user" : "cosimo"
+   },
+   "perl6-tag-helper" : {
+      "description" : "Tag string generator (Engineered for making XML or HTML5 soup)",
+      "flavours" : [],
+      "name" : "Tag",
+      "source_url" : "git://github.com/4d47/perl6-tag-helper.git",
+      "type" : "module",
+      "user" : "4d47"
    },
    "perl6-text-table-list" : {
       "description" : "Build simple text-based tables for field listings.",
