@@ -11,6 +11,9 @@ $s->get_or_create_project(
 my $gdc_title_prefix = $s->get_cfg('gdc_title_prefix')
 	|| die "Dashboard prefix not provided (use --co 'gdc_title_prefix=PREF').";
 
+my $out_dir = $s->get_cfg('out_dir')
+	|| $s->script_rel_fpath('..','temp','presentation');
+
 my $dash_objs = $s->get_obj_contents_by( type => 'dashboard', title => qr/^\Q$gdc_title_prefix\E/ );
 #$s->dump_struct('dashs', $dash_objs );
 
@@ -71,7 +74,7 @@ foreach my $dashi ( sort { $a->{title} cmp $b->{title} } @$dashs_info ) {
 			wait_till_computing($dr,100);
 		};
 
-		my $fpath = $s->script_rel_fpath('..','temp','presentation',$fname);
+		my $fpath = File::Spec->catfile( $out_dir, $fname );
 		print "Screenshot: '$fpath'\n";
 		screenshot( $dr, $fpath );
 	}
