@@ -214,11 +214,35 @@
       "type" : "module",
       "user" : "tadzik"
    },
+   "Image-PNG-Portable" : {
+      "description" : "Portable PNG output for Perl 6",
+      "flavours" : [],
+      "name" : "Image::PNG::Portable",
+      "source_url" : "git://github.com/raydiak/Image-PNG-Portable.git",
+      "type" : "module",
+      "user" : "raydiak"
+   },
+   "Inline-Lua" : {
+      "description" : "Embedded Lua for Perl 6",
+      "flavours" : [],
+      "name" : "Inline::Lua",
+      "source_url" : "git://github.com/raydiak/Inline-Lua.git",
+      "type" : "module",
+      "user" : "raydiak"
+   },
    "Inline-Perl5" : {
       "description" : "Use Perl 5 code in a Perl 6 program",
       "flavours" : [],
       "name" : "Inline::Perl5",
       "source_url" : "git://github.com/niner/Inline-Perl5.git",
+      "type" : "module",
+      "user" : "niner"
+   },
+   "Inline-Python" : {
+      "description" : "Use Python code and libraries in a Perl 6 program",
+      "flavours" : [],
+      "name" : "Inline::Python",
+      "source_url" : "git://github.com/niner/Inline-Python.git",
       "type" : "module",
       "user" : "niner"
    },
@@ -285,6 +309,14 @@
       "source_url" : "git://github.com/moritz/Math-Model.git",
       "type" : "module",
       "user" : "moritz"
+   },
+   "Math-Odd-Functions" : {
+      "description" : "Standard math function odds and ends",
+      "flavours" : [],
+      "name" : "Math::OddFunctions",
+      "source_url" : "git://github.com/colomon/Math-Odd-Functions.git",
+      "type" : "module",
+      "user" : "colomon"
    },
    "Math-Polynomial" : {
       "description" : "Simple polynomial class",
@@ -451,6 +483,38 @@
       "flavours" : [],
       "name" : "Net::XMPP",
       "source_url" : "git://github.com/retupmoca/P6-Net-XMPP.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
+   "P6-SOAP" : {
+      "description" : "Quick and dirty SOAP client",
+      "flavours" : [],
+      "name" : "SOAP::Client",
+      "source_url" : "git://github.com/retupmoca/P6-SOAP.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
+   "P6-UUID" : {
+      "description" : "UUID Generator",
+      "flavours" : [],
+      "name" : "UUID",
+      "source_url" : "git://github.com/retupmoca/P6-UUID.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
+   "P6-XML-Canonical" : {
+      "description" : "XML Canonicalization",
+      "flavours" : [],
+      "name" : "XML::Canonical",
+      "source_url" : "git://github.com/retupmoca/P6-XML-Canonical.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
+   "P6-XML-Signature" : {
+      "description" : "XML Signature",
+      "flavours" : [],
+      "name" : "XML::Signature",
+      "source_url" : "git://github.com/retupmoca/P6-XML-Signature.git",
       "type" : "module",
       "user" : "retupmoca"
    },
@@ -1242,6 +1306,22 @@
       "type" : "module",
       "user" : "perlpilot"
    },
+   "p6-Foo-v1.0.0" : {
+      "description" : "Test for installation of same named dists",
+      "flavours" : [],
+      "name" : "Foo",
+      "source_url" : "git://github.com/FROGGS/p6-Foo-v1.0.0.git",
+      "type" : "module",
+      "user" : "FROGGS"
+   },
+   "p6-Foo-v1.2.0" : {
+      "description" : "Test for installation of same named dists",
+      "flavours" : [],
+      "name" : "Foo",
+      "source_url" : "git://github.com/FROGGS/p6-Foo-v1.2.0.git",
+      "type" : "module",
+      "user" : "FROGGS"
+   },
    "p6-Games-BubbleBreaker" : {
       "description" : "A mouse based logic game",
       "flavours" : [],
@@ -1321,6 +1401,14 @@
       "source_url" : "git://github.com/perlpilot/p6-Questhub.git",
       "type" : "module",
       "user" : "perlpilot"
+   },
+   "p6-Slang-Piersing" : {
+      "description" : "allows identifier names like 'foo?' and 'foo!'",
+      "flavours" : [],
+      "name" : "Slang::Piersing",
+      "source_url" : "git://github.com/FROGGS/p6-Slang-Piersing.git",
+      "type" : "module",
+      "user" : "FROGGS"
    },
    "p6-Slang-Tuxic" : {
       "description" : "allows to call subs as: foo (args)",
@@ -1689,14 +1777,6 @@
       "type" : "module",
       "user" : "xfix"
    },
-   "perl6-XMMS2" : {
-      "description" : "Perl 6 bindings and stuff for XMMS2",
-      "flavours" : [],
-      "name" : "XMMS2",
-      "source_url" : "git://github.com/flussence/perl6-XMMS2.git",
-      "type" : "module",
-      "user" : "flussence"
-   },
    "perl6-audio-taglib-simple" : {
       "description" : "Read, write ID3 and other audio metadata with TagLib",
       "flavours" : [],
@@ -1744,6 +1824,14 @@
       "source_url" : "git://github.com/supernovus/perl6-datetime-format.git",
       "type" : "module",
       "user" : "supernovus"
+   },
+   "perl6-datetime-format-likego" : {
+      "description" : "Format dates using Go's reference format",
+      "flavours" : [],
+      "name" : "DateTime::Format::LikeGo",
+      "source_url" : "git://github.com/avuserow/perl6-datetime-format-likego.git",
+      "type" : "module",
+      "user" : "avuserow"
    },
    "perl6-datetime-math" : {
       "description" : "Add common math operations to DateTime objects.",
@@ -2088,6 +2176,14 @@
       "type" : "module",
       "user" : "supernovus"
    },
+   "perl6-webservice-lastfm" : {
+      "description" : "interact with the Last.fm API",
+      "flavours" : [],
+      "name" : "WebService::Lastfm",
+      "source_url" : "git://github.com/avuserow/perl6-webservice-lastfm.git",
+      "type" : "module",
+      "user" : "avuserow"
+   },
    "perl6-xml-query" : {
       "description" : "jQuery-like node selecting and traversing for XML.",
       "flavours" : [],
@@ -2310,6 +2406,14 @@
       "source_url" : "git://github.com/bbkr/text_markov.git",
       "type" : "module",
       "user" : "bbkr"
+   },
+   "toml-pm6" : {
+      "description" : "Perl 6 TOML Serializer",
+      "flavours" : [],
+      "name" : "TOML",
+      "source_url" : "git://github.com/Mouq/toml-pm6.git",
+      "type" : "module",
+      "user" : "Mouq"
    },
    "totem" : {
       "description" : "Perl 6 Smart Search Development Bar",
