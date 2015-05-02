@@ -102,6 +102,14 @@
       "type" : "module",
       "user" : "moritz"
    },
+   "CSV" : {
+      "description" : "Parse CSV data, API like Text::CSV_XS",
+      "flavours" : [],
+      "name" : "Text::CSV",
+      "source_url" : "git://github.com/Tux/CSV.git",
+      "type" : "module",
+      "user" : "Tux"
+   },
    "Class-Utils" : {
       "description" : "Small utilities to help with defining classes",
       "flavours" : [],
@@ -173,6 +181,14 @@
       "source_url" : "git://github.com/bbkr/GeoIPerl6.git",
       "type" : "module",
       "user" : "bbkr"
+   },
+   "Git-PurePerl" : {
+      "description" : "A Pureish Perl 6 interface to Git repositories",
+      "flavours" : [],
+      "name" : "Git::PurePerl",
+      "source_url" : "git://github.com/raydiak/Git-PurePerl.git",
+      "type" : "module",
+      "user" : "raydiak"
    },
    "Grammar-Profiler-Simple" : {
       "description" : "Simple rule profiling for Perl 6 grammars",
@@ -269,6 +285,14 @@
       "source_url" : "git://github.com/colomon/List-Utils.git",
       "type" : "module",
       "user" : "colomon"
+   },
+   "Log-Syslog-Native" : {
+      "description" : "Provide logging to POSIX native syslog facility",
+      "flavours" : [],
+      "name" : "Log::Syslog::Native",
+      "source_url" : "git://github.com/jonathanstowe/Log-Syslog-Native.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
    },
    "Masquerade" : {
       "description" : "Let Perl 6 constructs masquerade as other things.",
@@ -422,6 +446,14 @@
       "type" : "module",
       "user" : "retupmoca"
    },
+   "P6-HTTP-ParseParams" : {
+      "description" : "cookie/query/post data parsing",
+      "flavours" : [],
+      "name" : "HTTP::ParseParams",
+      "source_url" : "git://github.com/retupmoca/P6-HTTP-ParseParams.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
    "P6-LibraryMake" : {
       "description" : "An attempt to simplify native compilation",
       "flavours" : [],
@@ -486,6 +518,14 @@
       "type" : "module",
       "user" : "retupmoca"
    },
+   "P6-SAML" : {
+      "description" : "SAML 2",
+      "flavours" : [],
+      "name" : "Auth::SAML2",
+      "source_url" : "git://github.com/retupmoca/P6-SAML.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
    "P6-SOAP" : {
       "description" : "Quick and dirty SOAP client",
       "flavours" : [],
@@ -515,6 +555,14 @@
       "flavours" : [],
       "name" : "XML::Signature",
       "source_url" : "git://github.com/retupmoca/P6-XML-Signature.git",
+      "type" : "module",
+      "user" : "retupmoca"
+   },
+   "P6-iCal" : {
+      "description" : ".ics file handling",
+      "flavours" : [],
+      "name" : "Data::ICal",
+      "source_url" : "git://github.com/retupmoca/P6-iCal.git",
       "type" : "module",
       "user" : "retupmoca"
    },
@@ -681,9 +729,9 @@
       "description" : "easily search for system users in Unix-based systems",
       "flavours" : [],
       "name" : "System::Passwd",
-      "source_url" : "git://github.com/sillymoose/System-Passwd.git",
+      "source_url" : "git://github.com/dnmfarrell/System-Passwd.git",
       "type" : "module",
-      "user" : "sillymoose"
+      "user" : "dnmfarrell"
    },
    "TagTools" : {
       "description" : "Scripts for manipulating MP3 tags",
@@ -793,17 +841,9 @@
       "description" : "Simple line-wrapping and tab [un]expansion tools",
       "flavours" : [],
       "name" : "Text-Tabs-Wrap",
-      "source_url" : "git://github.com/flussence/Text-Tabs-Wrap.git",
+      "source_url" : "https://github.com/flussence/Text-Tabs-Wrap.git",
       "type" : "module",
       "user" : "flussence"
-   },
-   "Threads" : {
-      "description" : "Threads in Perl 6. Yeah, really",
-      "flavours" : [],
-      "name" : "Threads",
-      "source_url" : "git://github.com/tadzik/Threads.git",
-      "type" : "module",
-      "user" : "tadzik"
    },
    "Tree--Simple" : {
       "description" : "A simple tree object",
@@ -825,9 +865,9 @@
       "description" : "Encode and decode URIs according to RFC 3986",
       "flavours" : [],
       "name" : "URI::Encode",
-      "source_url" : "git://github.com/sillymoose/URI-Encode.git",
+      "source_url" : "git://github.com/dnmfarrell/URI-Encode.git",
       "type" : "module",
-      "user" : "sillymoose"
+      "user" : "dnmfarrell"
    },
    "benchmark" : {
       "description" : "Benchmark running times of Perl 6 code",
@@ -896,14 +936,6 @@
       "flavours" : [],
       "name" : "Game::Crypt",
       "source_url" : "git://github.com/masak/crypt.git",
-      "type" : "module",
-      "user" : "masak"
-   },
-   "csv" : {
-      "description" : "A parser for CSV (comma-separated values) files for Perl 6",
-      "flavours" : [],
-      "name" : "Text::CSV",
-      "source_url" : "git://github.com/masak/csv.git",
       "type" : "module",
       "user" : "masak"
    },
@@ -1119,6 +1151,14 @@
       "type" : "module",
       "user" : "Mouq"
    },
+   "json_fast" : {
+      "description" : "A naive, but hopefully fast json parser; drop-in replacement for JSON::Tiny",
+      "flavours" : [],
+      "name" : "JSON::Fast",
+      "source_url" : "git://github.com/timo/json_fast.git",
+      "type" : "module",
+      "user" : "timo"
+   },
    "jsonrpc" : {
       "description" : "JSON-RPC 2.0 client and server.",
       "flavours" : [],
@@ -1189,6 +1229,14 @@
       "source_url" : "git://github.com/MARTIMM/mongo-perl6-driver.git",
       "type" : "module",
       "user" : "MARTIMM"
+   },
+   "mortage6" : {
+      "description" : "Mortage calculation library",
+      "flavours" : [],
+      "name" : "Mortage",
+      "source_url" : "git://github.com/teodozjan/mortage6.git",
+      "type" : "module",
+      "user" : "teodozjan"
    },
    "mu" : {
       "flavours" : [],
@@ -1330,14 +1378,6 @@
       "type" : "module",
       "user" : "FROGGS"
    },
-   "p6-Git-Wrapper" : {
-      "description" : "simple, hacky way to use git from Perl 6",
-      "flavours" : [],
-      "name" : "Git::Wrapper",
-      "source_url" : "git://github.com/perlpilot/p6-Git-Wrapper.git",
-      "type" : "module",
-      "user" : "perlpilot"
-   },
    "p6-IDNA-Punycode" : {
       "description" : "Punycode implementation according to RFC3492",
       "flavours" : [],
@@ -1377,6 +1417,22 @@
       "source_url" : "git://github.com/labster/p6-Lingua-Number.git",
       "type" : "module",
       "user" : "labster"
+   },
+   "p6-Linux-Cpuinfo" : {
+      "description" : "Get the kernel CPU information on Linux",
+      "flavours" : [],
+      "name" : "Linux::Cpuinfo",
+      "source_url" : "https://github.com/jonathanstowe/p6-Linux-Cpuinfo.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
+   },
+   "p6-Linux-Fuser" : {
+      "description" : "Discover which process has a file open, in pure Perl 6",
+      "flavours" : [],
+      "name" : "Linux::Fuser",
+      "source_url" : "https://github.com/jonathanstowe/p6-Linux-Fuser.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
    },
    "p6-Locale-US" : {
       "description" : "Two letter codes for identifying United States territories and vice versa",
@@ -1466,14 +1522,6 @@
       "type" : "module",
       "user" : "afiskon"
    },
-   "p6-digest-sha256" : {
-      "description" : "A Perl 6 port of the SHA256 module in Perl 5",
-      "flavours" : [],
-      "name" : "Digest::SHA256",
-      "source_url" : "git://github.com/soh-cah-toa/p6-digest-sha256.git",
-      "type" : "module",
-      "user" : "soh-cah-toa"
-   },
    "p6-file-directory-tree" : {
       "description" : "Port of File::Path::Tiny - create and delete directory trees",
       "flavours" : [],
@@ -1505,6 +1553,14 @@
       "source_url" : "git://github.com/carbin/p6-jdf.git",
       "type" : "module",
       "user" : "carbin"
+   },
+   "p6-linenoise" : {
+      "description" : "Bindings to linenoise",
+      "flavours" : [],
+      "name" : "Linenoise",
+      "source_url" : "git://github.com/hoelzro/p6-linenoise.git",
+      "type" : "module",
+      "user" : "hoelzro"
    },
    "p6-lingua-en-syllable" : {
       "description" : "Guess the number of syllables in an English word",
@@ -1745,6 +1801,14 @@
       "type" : "module",
       "user" : "dwarring"
    },
+   "perl6-Pastebin-Shadowcat" : {
+      "description" : "Use http://fpaste.scsys.co.uk/ pastebin from Perl 6",
+      "flavours" : [],
+      "name" : "Pastebin::Shadowcat",
+      "source_url" : "git://github.com/zoffixznet/perl6-Pastebin-Shadowcat.git",
+      "type" : "module",
+      "user" : "zoffixznet"
+   },
    "perl6-Pod-Parser" : {
       "description" : "Naive parser for Perl 6 style POD documents",
       "flavours" : [],
@@ -1792,6 +1856,14 @@
       "source_url" : "git://github.com/tony-o/perl6-bench.git",
       "type" : "module",
       "user" : "tony-o"
+   },
+   "perl6-browser-open" : {
+      "description" : "Open a given URL in a browser",
+      "flavours" : [],
+      "name" : "Browser::Open",
+      "source_url" : "git://github.com/azawawi/perl6-browser-open.git",
+      "type" : "module",
+      "user" : "azawawi"
    },
    "perl6-cache-memcached" : {
       "description" : "Port of Cache::Memcached from Perl 5 to Perl 6",
@@ -1872,6 +1944,14 @@
       "source_url" : "git://github.com/sergot/perl6-encode.git",
       "type" : "module",
       "user" : "sergot"
+   },
+   "perl6-event-emitter" : {
+      "description" : "Awesome event emitter.  Threaded, or not.",
+      "flavours" : [],
+      "name" : "Event::Emitter",
+      "source_url" : "git://github.com/tony-o/perl6-event-emitter.git",
+      "type" : "module",
+      "user" : "tony-o"
    },
    "perl6-examples" : {
       "flavours" : [],
@@ -2045,6 +2125,14 @@
       "flavours" : [],
       "name" : "Operator::feq",
       "source_url" : "git://github.com/tony-o/perl6-operator-feq.git",
+      "type" : "module",
+      "user" : "tony-o"
+   },
+   "perl6-overwatch" : {
+      "description" : "Utility to help keep a processes running and restart them if they stop.",
+      "flavours" : [],
+      "name" : "Overwatch",
+      "source_url" : "git://github.com/tony-o/perl6-overwatch.git",
       "type" : "module",
       "user" : "tony-o"
    },
@@ -2486,12 +2574,12 @@
       "type" : "module",
       "user" : "masak"
    },
-   "zavolaj" : {
-      "description" : "Call native libraries",
+   "zef" : {
+      "description" : "CPAN but better. Maybe?",
       "flavours" : [],
-      "name" : "NativeCall",
-      "source_url" : "git://github.com/jnthn/zavolaj.git",
+      "name" : "Zef",
+      "source_url" : "git://github.com/ugexe/zef.git",
       "type" : "module",
-      "user" : "jnthn"
+      "user" : "ugexe"
    }
 }

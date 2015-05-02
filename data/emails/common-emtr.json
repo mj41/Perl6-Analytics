@@ -235,6 +235,10 @@
       "adehohum@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "adehohum"
    ],
+   "adriaan.larmuseau@gmail.com" : [
+      "adriaan.larmuseau@gmail.com",
+      "Adriaan"
+   ],
    "aegeler@neuralplanet.net" : [
       "aegeler@neuralplanet.net",
       "Andrew Egeler"
@@ -349,6 +353,13 @@
    "andreas.marienborg@gmail.com" : [
       "andreas.marienborg@gmail.com",
       "Andreas Marienborg"
+   ],
+   "andreoss@sdf.org" : [
+      "andreoss@sdf.org",
+      "Andrei Osipov"
+   ],
+   "andreoss@users.noreply.github.com" : [
+      "andreoss@sdf.org"
    ],
    "andrew@cleverdomain.org" : [
       "andrew@cleverdomain.org",
@@ -714,6 +725,9 @@
       "cedric.vincent@gmail.com",
       "CÃ©dric VINCENT"
    ],
+   "cedric@reproducible.io" : [
+      "cedric.vincent@gmail.com"
+   ],
    "cfourier@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "cfourier@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "cfourier"
@@ -894,6 +908,10 @@
       "cosmicnet@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "cosmicnet"
    ],
+   "cpan@zoffix.com" : [
+      "cpan@zoffix.com",
+      "Zoffix Znet"
+   ],
    "creaktive@gmail.com" : [
       "creaktive@gmail.com",
       "Stanislaw Pusep"
@@ -923,6 +941,13 @@
    "cyberuniverses@gmail.com" : [
       "cyberuniverses@gmail.com",
       "raydiak"
+   ],
+   "cygx@cpan.org" : [
+      "cygx@cpan.org",
+      "cygx"
+   ],
+   "cygx@users.noreply.github.com" : [
+      "cygx@cpan.org"
    ],
    "d.ginev@jacobs-university.de" : [
       "dig@hyacinth.cam.nist.gov"
@@ -1026,6 +1051,10 @@
    "deneboflion@hotmail.fr" : [
       "deneboflion@hotmail.fr",
       "LÃ©o Grange"
+   ],
+   "denis@regex-builder.com" : [
+      "denis@regex-builder.com",
+      "denis@regex-builder.com"
    ],
    "deven@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "deven@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1249,6 +1278,10 @@
       "fglock@gmail.com",
       "Flavio S. Glock"
    ],
+   "fh@25th-floor.com" : [
+      "fh@25th-floor.com",
+      "Florian Helmberger"
+   ],
    "filip.sergot@allegrogroup.com" : [
       "filip@sergot.pl"
    ],
@@ -1443,6 +1476,10 @@
       "gwern@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "gwern"
    ],
+   "h.m.brand@xs4all.nl" : [
+      "h.m.brand@xs4all.nl",
+      "H.Merijn Brand - Tux"
+   ],
    "hanekomu@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "hanekomu@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "hanekomu"
@@ -1466,6 +1503,10 @@
    "heather@live.ru" : [
       "heather@live.ru",
       "Heather"
+   ],
+   "heiko_jansen@web.de" : [
+      "heiko_jansen@web.de",
+      "Heiko Jansen"
    ],
    "helmut@wollmersdorfer.at" : [
       "helmut@wollmersdorfer.at",
@@ -1501,6 +1542,10 @@
    "ihrd@lenovo.csmile.ru" : [
       "ihrd@lenovo.csmile.ru",
       "Ilya Belikin"
+   ],
+   "ilmari.vacklin@reaktor.fi" : [
+      "ilmari.vacklin@reaktor.fi",
+      "Ilmari Vacklin"
    ],
    "infinoid@chirp.(none)" : [
       "infinoid@chirp.(none)",
@@ -1589,6 +1634,10 @@
       "jeffrey.t.palmer@gmail.com",
       "Jeffrey T. Palmer"
    ],
+   "jepeway@blasted-heath.com" : [
+      "jepeway@blasted-heath.com",
+      "Chris Jepeway"
+   ],
    "jerome.eteve@gmail.com" : [
       "jerome.eteve@gmail.com",
       "Jerome Eteve"
@@ -1616,9 +1665,12 @@
       "jgabriele@fastmail.fm",
       "John Gabriele"
    ],
+   "jgoff@cpan.org" : [
+      "jgoff@cpan.org",
+      "Jeffrey Goff"
+   ],
    "jgoff@speakeasy.net" : [
-      "jgoff@speakeasy.net",
-      "Jeff Goff"
+      "jgoff@cpan.org"
    ],
    "jhi@iki.fi" : [
       "jhi@iki.fi",
@@ -1657,6 +1709,13 @@
       "jmg3000@gmail.com",
       "John Gabriele"
    ],
+   "jns+git@gellyfish.co.uk" : [
+      "jns@gellyfish.co.uk"
+   ],
+   "jns@gellyfish.co.uk" : [
+      "jns@gellyfish.co.uk",
+      "Jonathan Stowe"
+   ],
    "jnthn@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jnthn@jnthn.net"
    ],
@@ -1682,6 +1741,10 @@
    "john.haltiwanger@gmail.com" : [
       "john.haltiwanger@gmail.com",
       "ab5tract"
+   ],
+   "john.van.krieken@xs4all.nl" : [
+      "john.van.krieken@xs4all.nl",
+      "John van Krieken"
    ],
    "johnrizzo1@gmail.com" : [
       "johnrizzo1@gmail.com",
@@ -1736,6 +1799,10 @@
    "jumpyshoes" : [
       "jumpyshoes",
       "Jumpyshoes"
+   ],
+   "justin@devuyst.com" : [
+      "justin@devuyst.com",
+      "Justin DeVuyst"
    ],
    "jworthington@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "jnthn@jnthn.net"
@@ -2751,6 +2818,10 @@
       "ribasushi@cpan.org",
       "Peter Rabbitson"
    ],
+   "rightfold@gmail.com" : [
+      "rightfold@gmail.com",
+      "rightfold"
+   ],
    "rippinblaise@gmail.com" : [
       "rippinblaise@gmail.com",
       "Blaise Ritchie"
@@ -3027,6 +3098,10 @@
       "simon@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "simon"
    ],
+   "simon@ruderich.org" : [
+      "simon@ruderich.org",
+      "Simon Ruderich"
+   ],
    "simon@simon-cozens.org" : [
       "simon@simon-cozens.org",
       "Simon Cozens"
@@ -3120,6 +3195,10 @@
    "stephenpollei@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "stephenpollei@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "stephenpollei"
+   ],
+   "sterling@hanenkamp.com" : [
+      "sterling@hanenkamp.com",
+      "Sterling Hanenkamp"
    ],
    "stevan@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "stevan@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -3275,12 +3354,22 @@
       "Tom Hughes"
    ],
    "tony.odell@bestxperts.com" : [
-      "tony.odell@bestxperts.com",
-      "segomos"
+       "tony.odell@live.com"
    ],
    "tony.odell@live.com" : [
       "tony.odell@live.com",
       "Tony O'Dell"
+   ],
+   "tony.odell@xpertminds.net" : [
+       "tony.odell@live.com"
+   ],
+   "tony@debian" : [
+      "tony@debian",
+      "tony"
+   ],
+   "tony@element.(none)" : [
+      "tony@element.(none)",
+      "Tony"
    ],
    "tonyo@darcsys.com" : [
       "tonyo@darcsys.com",
@@ -3288,6 +3377,10 @@
    ],
    "tonyo@defcon" : [
       "tonyo@defcon",
+      "tonyo"
+   ],
+   "tonyo@postal" : [
+      "tonyo@postal",
       "tonyo"
    ],
    "tonyo@rightclickblog.com" : [
@@ -3419,6 +3512,10 @@
       "wayland@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "wayland"
    ],
+   "wbiker@gmx.at" : [
+      "wbiker@gmx.at",
+      "WBA"
+   ],
    "webmaster@cosmicperl.com" : [
       "webmaster@cosmicperl.com",
       "cosmicnet"
@@ -3521,8 +3618,10 @@
       "zhuomingliang01@qq.com"
    ],
    "zoffix@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
-      "zoffix@c213334d-75ef-0310-aa23-eaa082d1ae64",
-      "zoffix"
+      "cpan@zoffix.com"
+   ],
+   "zoffixznet@users.noreply.github.com" : [
+      "cpan@zoffix.com"
    ],
    "zrusilla@mac.com" : [
       "zrusilla@mac.com",
