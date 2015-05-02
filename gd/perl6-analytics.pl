@@ -3,6 +3,7 @@
 my $do_synchronize = $s->get_cfg('do_synchronize');
 my $do_uploads = $s->get_cfg('do_uploads');
 my $do_addon_features = $s->get_cfg('do_addon_features');
+my $dash_identifier = $s->get_cfg('dash_identifier') || 'aZ9Plococr2G';
 
 $s->login();
 $s->get_or_create_project(
@@ -10,6 +11,8 @@ $s->get_or_create_project(
 	token => $s->get_cfg('token') || undef,
 	driver => $s->get_cfg('driver') || 'Pg',
 );
+
+print "Dashboard identifier: $dash_identifier\n";
 
 # Datasets names.
 my @datanames = qw(
@@ -22,8 +25,6 @@ my @datanames_plus = qw(
 );
 my $base_data_def_dir = $s->script_rel_fpath('../../Git-Analytics/gd/data-def');
 my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
-
-my $dash_identifier = 'aZ9Plococr2G';
 
 if ( $do_uploads ) {
 	# maql - base
