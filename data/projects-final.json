@@ -382,6 +382,14 @@
       "type" : "module",
       "user" : "colomon"
    },
+   "Module-Minter" : {
+      "description" : "a Perl 6 module for creating new modules",
+      "flavours" : [],
+      "name" : "Module::Minter",
+      "source_url" : "git://github.com/dnmfarrell/Module-Minter.git",
+      "type" : "module",
+      "user" : "dnmfarrell"
+   },
    "MuEvent" : {
       "description" : "An AnyEvent lookalike",
       "flavours" : [],
@@ -636,6 +644,14 @@
       "source_url" : "git://github.com/colomon/Phaser-ATEXIT.git",
       "type" : "module",
       "user" : "colomon"
+   },
+   "Pod-Perl5" : {
+      "description" : "Parser and grammar for Perl 5 pod, with an HTML converter",
+      "flavours" : [],
+      "name" : "Pod::Perl5",
+      "source_url" : "git://github.com/dnmfarrell/Pod-Perl5.git",
+      "type" : "module",
+      "user" : "dnmfarrell"
    },
    "Pod-To-HTML" : {
       "description" : "Convert Perl 6 Pod to HTML",
@@ -2207,6 +2223,14 @@
       "source_url" : "git://github.com/4d47/perl6-tag-helper.git",
       "type" : "module",
       "user" : "4d47"
+   },
+   "perl6-template-protone" : {
+      "description" : "Perl6 embedded templates",
+      "flavours" : [],
+      "name" : "Template::Protone",
+      "source_url" : "git://github.com/tony-o/perl6-template-protone.git",
+      "type" : "module",
+      "user" : "tony-o"
    },
    "perl6-text-table-list" : {
       "description" : "Build simple text-based tables for field listings.",
