@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;
@@ -17,5 +17,5 @@ use Perl6::Analytics::Commits;
 my $skip_fetch = $ARGV[0];
 my $vl = $ARGV[1];
 
-my $features_obj = Perl6::Analytics::Commits->new( verbose_level => $vl );
-$features_obj->process_and_save_csv( skip_fetch => $skip_fetch );
+my $commits_obj = Perl6::Analytics::Commits->new( verbose_level => $vl );
+$commits_obj->process_and_save_csv( skip_fetch => $skip_fetch );
