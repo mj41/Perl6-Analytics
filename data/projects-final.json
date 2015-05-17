@@ -142,6 +142,14 @@
       "type" : "module",
       "user" : "tadzik"
    },
+   "Crypt-Libcrypt" : {
+      "description" : "Simple binding to crypt(3) from unix-like systems",
+      "flavours" : [],
+      "name" : "Crypt::Libcrypt",
+      "source_url" : "git://github.com/jonathanstowe/Crypt-Libcrypt.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
+   },
    "DBIish" : {
       "description" : "Database connectivity for Perl 6",
       "flavours" : [],
@@ -189,6 +197,14 @@
       "source_url" : "git://github.com/raydiak/Git-PurePerl.git",
       "type" : "module",
       "user" : "raydiak"
+   },
+   "Grammar-BNF" : {
+      "description" : "Parse BNF and ABNF grammars and generate Perl 6 grammars from them",
+      "flavours" : [],
+      "name" : "Grammar::BNF",
+      "source_url" : "git://github.com/tadzik/Grammar-BNF.git",
+      "type" : "module",
+      "user" : "tadzik"
    },
    "Grammar-Profiler-Simple" : {
       "description" : "Simple rule profiling for Perl 6 grammars",
@@ -700,6 +716,14 @@
       "source_url" : "git://github.com/sirrobert/Semantic-Versioning.git",
       "type" : "module",
       "user" : "sirrobert"
+   },
+   "Serialize-Tiny.pm6" : {
+      "description" : "A very simple `serialize` sub to get public attribute values",
+      "flavours" : [],
+      "name" : "Serialize::Tiny",
+      "source_url" : "git://github.com/vendethiel/Serialize-Tiny.pm6.git",
+      "type" : "module",
+      "user" : "vendethiel"
    },
    "Shell-Command" : {
       "description" : "Common shell command replacements",
@@ -1498,6 +1522,22 @@
       "type" : "module",
       "user" : "stmuk"
    },
+   "p6-Sys-Lastlog" : {
+      "description" : "Perl 6 access to Lastlog information on Unix-like systems",
+      "flavours" : [],
+      "name" : "Sys::Lastlog",
+      "source_url" : "git://github.com/jonathanstowe/p6-Sys-Lastlog.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
+   },
+   "p6-Sys-Utmp" : {
+      "description" : "Perl 6 access to Utmp entries on Unix-like systems",
+      "flavours" : [],
+      "name" : "Sys::Utmp",
+      "source_url" : "git://github.com/jonathanstowe/p6-Sys-Utmp.git",
+      "type" : "module",
+      "user" : "jonathanstowe"
+   },
    "p6-Template-Mustache" : {
       "description" : "A logic-free, cross-language templating format",
       "flavours" : [],
@@ -1537,6 +1577,14 @@
       "source_url" : "git://github.com/afiskon/p6-datetime-format-w3cdtf.git",
       "type" : "module",
       "user" : "afiskon"
+   },
+   "p6-debug" : {
+      "description" : "Experimental debugging macros",
+      "flavours" : [],
+      "name" : "DEBUG",
+      "source_url" : "git://github.com/cygx/p6-debug.git",
+      "type" : "module",
+      "user" : "cygx"
    },
    "p6-file-directory-tree" : {
       "description" : "Port of File::Path::Tiny - create and delete directory trees",
@@ -1625,6 +1673,22 @@
       "source_url" : "git://github.com/soh-cah-toa/p6-test-builder.git",
       "type" : "module",
       "user" : "soh-cah-toa"
+   },
+   "p6-tinycc" : {
+      "description" : "The Tiny C Compiler",
+      "flavours" : [],
+      "name" : "TinyCC",
+      "source_url" : "git://github.com/cygx/p6-tinycc.git",
+      "type" : "module",
+      "user" : "cygx"
+   },
+   "p6-uni63" : {
+      "description" : "A Unicode encoding scheme suitable for name mangling",
+      "flavours" : [],
+      "name" : "Uni63",
+      "source_url" : "git://github.com/cygx/p6-uni63.git",
+      "type" : "module",
+      "user" : "cygx"
    },
    "p6-webservice-justcoin" : {
       "description" : "Access to Justcoin trading API (Norwegian Bitcoin marketplace)",
