@@ -99,7 +99,13 @@ if ( 1 && $do_addon_features ) {
 	my $dash_obj = $s->get_first_obj_content_by( identifier => $dash_identifier );
 	$self->update_dashboard_item(
 		$dash_obj,
-		{ tab_pos => 0, item_pos => 6 }, # todo - more dynamic aproach
+		sub {
+			my ( $item_struct_name, $item_body, $item_pos, $tab_obj, $tab_pos ) = @_;
+			return 0 unless $item_struct_name eq 'textItem';
+			print "'$item_struct_name' text: $item_body->{text} (tab $tab_pos, item $item_pos)\n";
+			return 1 if $item_body->{text} =~ m{github\.com/perl6/features/blob/.*/features\.json};
+			return 0;
+		},
 		{ text => $text },
 	);
 	#$s->dump_struct( 'dash_obj', $dash_obj );
