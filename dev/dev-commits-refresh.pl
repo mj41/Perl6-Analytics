@@ -32,11 +32,10 @@ mkdir 'temp/dev-cache-dir';
 my $git_log_args = {};
 $git_log_args->{number_limit} = $number_limit if $number_limit;
 $git_log_args->{rev_range} = $rev_range if $rev_range;
-
+$features_obj->data_out_dir('temp/dev-out-dir');
+$features_obj->data_cache_dir('temp/dev-cache-dir');
 $features_obj->process_and_save_csv(
 	skip_fetch => $skip_fetch,
 	project_alias => $alias,
-	data_out_dir => 'temp/dev-out-dir',
-	data_cache_dir => 'temp/dev-cache-dir',
 	git_log_args => $git_log_args,
 );

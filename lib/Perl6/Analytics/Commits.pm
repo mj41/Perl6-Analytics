@@ -15,6 +15,20 @@ use Git::Repository::LogRaw;
 use JSON::InFile;
 
 
+sub data_out_dir {
+    my ( $self, $val ) = @_;
+    $self->{data_out_dir} = $val if defined $val;
+    return $self->{data_out_dir} if exists $self->{data_out_dir};
+    return 'data-out';
+}
+
+sub data_cache_dir {
+    my ( $self, $val ) = @_;
+    $self->{data_cache_dir} = $val if defined $val;
+    return $self->{data_cache_dir} if exists $self->{data_cache_dir};
+    return 'data-cache';
+}
+
 sub prepare_dirs {
 	my ( $self ) = @_;
 
@@ -147,17 +161,14 @@ sub process_and_save_csv {
 
 	$self->prepare_dirs();
 
-	my $data_out_dir = $args{data_out_dir} || 'data-out';
-	my $data_cache_dir = $args{data_cache_dir} || 'data-cache';
-
 	my $ga_obj = Git::Analytics->new(
 		verbose_level => $self->{vl},
 		also_commits_files => 1,
-		data_cache_dir => $data_cache_dir,
+		data_cache_dir => $self->data_cache_dir,
 	);
 	$ga_obj->open_out_csv_files(
-		File::Spec->catfile( $data_out_dir, 'commits.csv' ),
-		File::Spec->catfile( $data_out_dir, 'commits_files.csv' ),
+		File::Spec->catfile( $self->data_out_dir, 'commits.csv' ),
+		File::Spec->catfile( $self->data_out_dir, 'commits_files.csv' ),
 	);
 	$ga_obj->print_csv_headers();
 
@@ -170,15 +181,14 @@ sub process_and_save_csv {
 			return 0;
 		}
 
-		my $repo_url = $projects->{$project_alias}{source_url};
-		my $project_name = $projects->{$project_alias}{name};
 		my $branch = $projects->{$project_alias}{branch} // 'master';
 		my $base_repo_obj = $self->git_repo_obj(
 			$project_alias,
-			repo_url => $repo_url,
+			repo_url => $projects->{$project_alias}{source_url},
 			skip_fetch => $skip_fetch,
 		);
 
+		my $project_name = $projects->{$project_alias}{name};
 		my $git_lograw_obj = Git::Repository::LogRaw->new( $base_repo_obj, $self->{vl} );
 		$ga_obj->process_one(
 			$project_alias,
