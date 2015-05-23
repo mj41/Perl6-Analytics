@@ -181,6 +181,7 @@ sub process {
 	my $short2full_impl = $self->get_short_to_full_sha1( $projects, $self->impl_aliases );
 	$self->dump( 'short2full_impl', $short2full_impl ) if $self->{vl} >= 9;
 
+	# todo
 	my $sha1_roast_fallback = {};
 	my $sha1_impl_fallback = {};
 
@@ -189,25 +190,25 @@ sub process {
 		my $short_impl_sha1 = $row->[10]; # impl sha1
 		my ( $roast_sha1 ) = ( $short_roast_sha1 )
 				? $self->find_full_sha1( $short2full_roast, $short_roast_sha1 )
-				: $sha1_roast_fallback->{$row->[0]}{$row->[1]} || next; # && croak "Fall back for roast not found.";
+				: $sha1_roast_fallback->{$row->[0]}{$row->[1]} || ''; # && croak "Fall back for roast not found.";
 		;
 		my ( $impl_sha1, $project ) = ( $short_impl_sha1 )
 				? $self->find_full_sha1( $short2full_impl, $short_impl_sha1 )
-				: $sha1_impl_fallback->{$row->[0]}{$row->[1]} || next; # croak "Fall back for impl not found.";
+				: $sha1_impl_fallback->{$row->[0]}{$row->[1]} || ''; # croak "Fall back for impl not found.";
 		;
 		push @{$self->{data}}, [
-			#$row->[0],  # Impl - project_flavour
-			#$row->[1],  # date
-			#$row->[2],  # percentage
-			$roast_sha1, # roast sha1 - roast_sha1
-			$row->[4],   # pass
-			$row->[5],   # fail
-			$row->[6],   # todo
-			$row->[7],   # skip
-			$row->[8],   # plan
-			$row->[9],   # spec
-			$impl_sha1,  # impl sha1 - impl_sha1
-			#$row->[11], # notes
+			#$row->[0],   # Impl - project_flavour
+			$row->[1],    # date
+			#$row->[2],   # percentage
+			#$roast_sha1, # roast sha1 - roast_sha1
+			$row->[4],    # pass
+			$row->[5],    # fail
+			$row->[6],    # todo
+			$row->[7],    # skip
+			$row->[8],    # plan
+			$row->[9],    # spec
+			$impl_sha1,   # impl sha1 - impl_sha1
+			#$row->[11],  # notes
 		];
 	}
 	return 1;
@@ -216,7 +217,7 @@ sub process {
 sub save_csv {
 	my ( $self ) = @_;
 
-	my $fpath = "data-out/roast-data.csv";
+	my $fpath = "data-out/roastdata.csv";
 
 	open( my $fh, ">:encoding(utf8)", $fpath )
 		or croak "Open '$fpath' for write failed: $!";
@@ -224,7 +225,7 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
-	my @head_row = qw/ date roast_sha1 pass fail todo skip plan spec impl_sha1 /;
+	my @head_row = qw/ date pass fail todo skip plan spec impl_sha1 /;
 	$csv->print( $fh, \@head_row );
 	foreach my $row ( @{ $self->{data} } ) {
 		$csv->print( $fh, $row );

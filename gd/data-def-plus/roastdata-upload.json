@@ -1,0 +1,67 @@
+{
+	"dataSetSLIManifest" : {
+      "parts" : [
+         {
+            "columnName" : "date",
+            "constraints" : { "date" : "yyyy-MM-dd" },
+            "populates" : [
+               "dt_roastdata.date.mdyy"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
+            "columnName" : "pass",
+            "populates" : [
+               "fact.roastdata.pass"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "fail",
+            "populates" : [
+               "fact.roastdata.fail"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "todo",
+            "populates" : [
+               "fact.roastdata.todo"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "skip",
+            "populates" : [
+               "fact.roastdata.skip"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "plan",
+            "populates" : [
+               "fact.roastdata.plan"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "spec",
+            "populates" : [
+               "fact.roastdata.spec"
+            ],
+            "mode" : "FULL"
+         },
+         {
+            "columnName" : "impl_sha1",
+            "populates" : [
+               "l_commit_record.sha1"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         }
+      ],
+      "file" : "roastdata.csv",
+      "dataSet" : "dataset.roastdata"
+   }
+}

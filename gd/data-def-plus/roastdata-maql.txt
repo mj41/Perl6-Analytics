@@ -1,0 +1,28 @@
+CREATE FOLDER {dim.roastdata} VISUAL(TITLE "RoastData") TYPE ATTRIBUTE;
+CREATE FOLDER {ff.roastdata} VISUAL(TITLE "RoastData") TYPE FACT;
+
+CREATE ATTRIBUTE {attr.roastdata_record} VISUAL(TITLE "RoastData Record", FOLDER {dim.roastdata})
+  AS KEYS {tab_roastdata.id} PRIMARY;
+
+INCLUDE TEMPLATE "URN:GOODDATA:DATE" MODIFY (IDENTIFIER "dt_roastdata", TITLE "RoastData");
+ALTER ATTRIBUTE {dt_roastdata.date} ADD KEYS {tab_roastdata.date_id};
+
+CREATE FACT {fact.roastdata.pass} VISUAL(TITLE "RoastData pass", FOLDER {ff.roastdata}) AS {tab_roastdata.pass};
+CREATE FACT {fact.roastdata.fail} VISUAL(TITLE "RoastData fail", FOLDER {ff.roastdata}) AS {tab_roastdata.fail};
+CREATE FACT {fact.roastdata.todo} VISUAL(TITLE "RoastData todo", FOLDER {ff.roastdata}) AS {tab_roastdata.todo};
+CREATE FACT {fact.roastdata.skip} VISUAL(TITLE "RoastData skip", FOLDER {ff.roastdata}) AS {tab_roastdata.skip};
+CREATE FACT {fact.roastdata.plan} VISUAL(TITLE "RoastData plan", FOLDER {ff.roastdata}) AS {tab_roastdata.plan};
+CREATE FACT {fact.roastdata.spec} VISUAL(TITLE "RoastData spec", FOLDER {ff.roastdata}) AS {tab_roastdata.spec};
+
+CREATE DATASET {dataset.roastdata} VISUAL(TITLE "RoastData");
+ALTER DATASET {dataset.roastdata}
+  ADD {attr.roastdata_record},
+      {fact.roastdata.pass}, {fact.roastdata.fail}, {fact.roastdata.todo},
+      {fact.roastdata.skip}, {fact.roastdata.plan}, {fact.roastdata.spec};
+
+ALTER ATTRIBUTE {attr.commit_record} ADD KEYS {tab_roastdata.fk_impl_sha1};
+
+SYNCHRONIZE {dataset.roastdata};
+
+
+

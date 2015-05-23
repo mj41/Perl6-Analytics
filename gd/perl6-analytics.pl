@@ -22,6 +22,7 @@ my @datanames = qw(
 );
 my @datanames_plus = qw(
 	features
+	roastdata
 );
 my $base_data_def_dir = $s->script_rel_fpath('../../Git-Analytics/gd/data-def');
 my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
@@ -83,6 +84,15 @@ if ( $do_uploads ) {
 		dataset => 'features',
 		manifest_dir => $plus_data_def_dir,
 		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'features.csv' ),
+	);
+}
+
+# roastdata
+if ( $do_uploads ) {
+	$s->dataset_upload(
+		dataset => 'roastdata',
+		manifest_dir => $plus_data_def_dir,
+		csv_abs_fpath => $s->script_rel_fpath( '..', 'data-out', 'roastdata.csv' ),
 	);
 }
 
