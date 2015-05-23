@@ -2459,6 +2459,13 @@
       "type" : "others",
       "url" : "https://github.com/perl6/roast"
    },
+   "roast-data" : {
+      "flavours" : [],
+      "name" : "Roast Data",
+      "source_url" : "git://github.com/coke/perl6-roast-data.git",
+      "type" : "others",
+      "url" : "https://github.com/coke/perl6-roast-data"
+   },
    "rosella" : {
       "flavours" : [],
       "name" : "Rosella",
