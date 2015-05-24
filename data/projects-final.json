@@ -753,9 +753,9 @@
       "description" : "Ruby Sprockets-like",
       "flavours" : [],
       "name" : "Sprockets",
-      "source_url" : "git://github.com/Nami-Doc/Sprockets.pl.git",
+      "source_url" : "git://github.com/vendethiel/Sprockets.pl.git",
       "type" : "module",
-      "user" : "Nami-Doc"
+      "user" : "vendethiel"
    },
    "Stats" : {
       "description" : "Statistics modules for Perl6 inspired by functionality from R and the Pandas library in Python.",
@@ -788,6 +788,14 @@
       "source_url" : "git://github.com/tadzik/Task-Star.git",
       "type" : "module",
       "user" : "tadzik"
+   },
+   "Template-Anti" : {
+      "description" : "The anti-template templating tool.",
+      "flavours" : [],
+      "name" : "Template::Anti",
+      "source_url" : "git://github.com/zostay/Template-Anti.git",
+      "type" : "module",
+      "user" : "zostay"
    },
    "Template-Mojo" : {
       "description" : "A templating system similar to Perl 5's Mojo::Template",
@@ -1546,6 +1554,14 @@
       "type" : "module",
       "user" : "softmoth"
    },
+   "p6-Text-VimColour" : {
+      "description" : "Converts scripts into colour syntax HTML using vim. ",
+      "flavours" : [],
+      "name" : "Text::VimColour",
+      "source_url" : "git://github.com/stmuk/p6-Text-VimColour.git",
+      "type" : "module",
+      "user" : "stmuk"
+   },
    "p6-Time-Duration" : {
       "description" : "Runded or exact English expression of durations",
       "flavours" : [],
@@ -2104,6 +2120,14 @@
       "type" : "module",
       "user" : "tony-o"
    },
+   "perl6-http-server-threaded" : {
+      "description" : "Threaded Base HTTP Server",
+      "flavours" : [],
+      "name" : "HTTP::Server::Threaded",
+      "source_url" : "git://github.com/tony-o/perl6-http-server-threaded.git",
+      "type" : "module",
+      "user" : "tony-o"
+   },
    "perl6-http-status" : {
       "description" : "Get the text message associated with an HTTP status code",
       "flavours" : [],
@@ -2255,6 +2279,14 @@
       "source_url" : "git://github.com/supernovus/perl6-psgi.git",
       "type" : "module",
       "user" : "supernovus"
+   },
+   "perl6-readline" : {
+      "description" : "Perl 6 interface to GNU Readline, the CLI-based line reading libary",
+      "flavours" : [],
+      "name" : "Readline",
+      "source_url" : "git://github.com/drforr/perl6-readline.git",
+      "type" : "module",
+      "user" : "drforr"
    },
    "perl6-redis" : {
       "description" : "A Perl6 binding for Redis",
