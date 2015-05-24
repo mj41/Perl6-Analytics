@@ -185,7 +185,24 @@ sub process {
 	my $sha1_roast_fallback = {};
 	my $sha1_impl_fallback = {};
 
+	my $clean_flavour = {
+		'rakudo.jvm' => 'Rakudo JVM',
+		'rakudo.moar' => 'Rakudo MoarVM',
+		'rakudo.moar-jit' => 'Rakudo MoarVM',
+		'rakudo.parrot' => 'Rakudo Parrot',
+		'niecza' => 'Niecza',
+		'pugs' => 'Pugs.hs',
+	};
+
 	foreach my $row ( @$raw_data ) {
+		my $flavour_raw = $row->[0];
+		if ( not exists $clean_flavour->{$flavour_raw} ) {
+			croak "Unknown project flavour: $flavour_raw\n";
+		} elsif ( not defined $clean_flavour->{$flavour_raw} ) {
+			next;
+		}
+		my $flavour = $clean_flavour->{$flavour_raw};
+
 		my $short_roast_sha1 = $row->[3]; # roast sha1
 		my $short_impl_sha1 = $row->[10]; # impl sha1
 		my ( $roast_sha1 ) = ( $short_roast_sha1 )
@@ -197,7 +214,7 @@ sub process {
 				: $sha1_impl_fallback->{$row->[0]}{$row->[1]} || ''; # croak "Fall back for impl not found.";
 		;
 		push @{$self->{data}}, [
-			#$row->[0],   # Impl - project_flavour
+			$flavour,     # Impl - project_flavour
 			$row->[1],    # date
 			#$row->[2],   # percentage
 			#$roast_sha1, # roast sha1 - roast_sha1
@@ -225,7 +242,7 @@ sub save_csv {
 	my $csv = Text::CSV_XS->new();
 	$csv->eol("\n");
 
-	my @head_row = qw/ date pass fail todo skip plan spec impl_sha1 /;
+	my @head_row = qw/ project_flavour date pass fail todo skip plan spec impl_sha1 /;
 	$csv->print( $fh, \@head_row );
 	foreach my $row ( @{ $self->{data} } ) {
 		$csv->print( $fh, $row );

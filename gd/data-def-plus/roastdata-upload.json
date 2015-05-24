@@ -2,6 +2,14 @@
 	"dataSetSLIManifest" : {
       "parts" : [
          {
+            "columnName" : "project_flavour",
+            "populates" : [
+               "l_project_flavour.name"
+            ],
+            "mode" : "FULL",
+            "referenceKey" : 1
+         },
+         {
             "columnName" : "date",
             "constraints" : { "date" : "yyyy-MM-dd" },
             "populates" : [

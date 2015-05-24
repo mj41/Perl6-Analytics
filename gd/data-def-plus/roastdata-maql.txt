@@ -21,6 +21,7 @@ ALTER DATASET {dataset.roastdata}
       {fact.roastdata.skip}, {fact.roastdata.plan}, {fact.roastdata.spec};
 
 ALTER ATTRIBUTE {attr.commit_record} ADD KEYS {tab_roastdata.fk_impl_sha1};
+ALTER ATTRIBUTE {attr.project_flavour} ADD KEYS {tab_roastdata.fk_project_flavour};
 
 SYNCHRONIZE {dataset.roastdata};
 
