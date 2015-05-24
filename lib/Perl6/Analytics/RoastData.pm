@@ -6,13 +6,10 @@ use Carp qw(carp croak verbose);
 
 use base qw(
 	Perl6::Analytics::Base
-	Perl6::Analytics::Role::JSON
 	Perl6::Analytics::Role::ProjectsCache
 	Perl6::Analytics::Role::ClonesManager
 );
 
-use JSON::InFile;
-#use Perl6::RoastData;
 use Text::CSV_XS;
 use Git::Repository::LogRaw;
 
@@ -249,6 +246,5 @@ sub save_csv {
 	}
 	close($fh) or croak "Write to '$fpath' failed: $!";
 }
-
 
 1;
