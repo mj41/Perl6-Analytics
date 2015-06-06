@@ -27,6 +27,13 @@
       "type" : "docs",
       "url" : "http://github.com/perl6/course"
    },
+   "docker" : {
+      "flavours" : [],
+      "name" : "docker",
+      "source_url" : "git://github.com/perl6/docker.git",
+      "type" : "others",
+      "url" : "https://github.com/perl6/docker"
+   },
    "ecosystem" : {
       "flavours" : [],
       "name" : "ecosystem",
@@ -103,6 +110,13 @@
       "source_url" : "git://github.com/perl6/perl6-examples.git",
       "type" : "others",
       "url" : "http://github.com/perl6/perl6-examples"
+   },
+   "perl6.org" : {
+      "flavours" : [],
+      "name" : "perl6.org",
+      "source_url" : "git://github.com/perl6/perl6.org.git",
+      "type" : "docs",
+      "url" : "http://github.com/perl6/perl6.org"
    },
    "pugs.hs" : {
       "flavours" : [],
