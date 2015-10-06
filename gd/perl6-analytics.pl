@@ -96,7 +96,7 @@ if ( $do_uploads ) {
 	);
 }
 
-if ( 1 && $do_addon_features ) {
+if ( $do_addon_features ) {
 	use JSON::XS;
 	my $json_obj = JSON::XS->new->canonical(1)->pretty(1)->utf8(0)->relaxed(1);
 

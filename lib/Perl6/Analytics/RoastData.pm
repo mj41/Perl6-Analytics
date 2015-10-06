@@ -186,6 +186,7 @@ sub process {
 		'rakudo.jvm' => 'Rakudo JVM',
 		'rakudo.moar' => 'Rakudo MoarVM',
 		'rakudo.moar-jit' => 'Rakudo MoarVM',
+		'rakudo.moar-glr' => 'Rakudo MoarVM GLR',
 		'rakudo.parrot' => 'Rakudo Parrot',
 		'niecza' => 'Niecza',
 		'pugs' => 'Pugs.hs',

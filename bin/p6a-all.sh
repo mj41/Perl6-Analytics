@@ -49,6 +49,8 @@ echo "Runing commits refresh script"
 perl bin/commits-refresh.pl $SKIP_FETCH 5
 echo "Runing features refresh script"
 perl bin/features-refresh.pl $SKIP_FETCH 5
+echo "Runing roastdata refresh script"
+perl bin/roastdata-refresh.pl $SKIP_FETCH 5
 
 cd /home/mj/gd/rolapps/apps/rcheck/
 echo "Updating GD project"
