@@ -860,7 +860,8 @@
       "name" : "Perl6::Maven",
       "source_url" : "git://github.com/szabgab/Perl6-Maven.git",
       "type" : "module",
-      "user" : "szabgab"
+      "user" : "szabgab",
+      "branch" : "main"
    },
    "Perl6-Net--HTTP" : {
       "description" : "Roll your own http client",

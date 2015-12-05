@@ -6,6 +6,13 @@
       "type" : "others",
       "url" : "https://github.com/jnthn/6model"
    },
+   "Perl6-Maven" : {
+      "branch" : "main",
+      "flavours" : [],
+      "name" : "Perl6::Maven",
+      "source_url" : "git://github.com/szabgab/Perl6-Maven.git",
+      "type" : "module"
+   },
    "Perlito" : {
       "flavours" : [],
       "name" : "Perlito",
