@@ -55,9 +55,9 @@ perl bin/roastdata-refresh.pl $SKIP_FETCH 5
 cd /home/mj/gd/rolapps/apps/rcheck/
 echo "Updating GD project"
 if [ "$INSTANCE_TYPE" == "prod" ]; then
-	perl rcheck.pl -vl 8 -cf config/secure-na.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl --co do_uploads=1 --co do_synchronize=1 --co do_addon_features=1 -p $GD_PROJ_NAME
+	./rcheck -vl 8 -cf config/secure-na.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl --co do_uploads=1 --co do_synchronize=1 --co do_addon_features=1 -p $GD_PROJ_NAME
 else
-	perl rcheck.pl --base_url "https://$PI_HOSTNAME" -vl 8 -cf config/dev-machine.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl --co do_uploads=1 --co do_synchronize=1 --co do_addon_features=1 -p $GD_PROJ_NAME
+	./rcheck --base_url "https://$PI_HOSTNAME" -vl 8 -cf config/dev-machine.yaml -sc ~/gd/rolapps/third-part/Perl6-Analytics/gd/perl6-analytics.pl --co do_uploads=1 --co do_synchronize=1 --co do_addon_features=1 -p $GD_PROJ_NAME
 fi
 
 echo "Done"
