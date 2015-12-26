@@ -237,6 +237,10 @@
       "abcxyz@cpan.org",
       "abcxyzp"
    ],
+   "abraxxa@cpan.org" : [
+      "abraxxa@cpan.org",
+      "Alexander Hartmaier"
+   ],
    "ac.yardley@gmail.com" : [
       "ac.yardley@gmail.com",
       "Alvis Yardley"
@@ -311,9 +315,16 @@
       "alessandro@ghedini.me",
       "Alessandro Ghedini"
    ],
+   "alex.jakimenko+github@gmail.com" : [
+      "alex.jakimenko+github@gmail.com",
+      "Aleks-Daniel Jakimenko"
+   ],
    "alex@earth.li" : [
       "alex@earth.li",
       "Alex Gough"
+   ],
+   "alex@hartmaier.priv.at" : [
+      "abraxxa@cpan.org"
    ],
    "alexghacker@yahoo.com" : [
       "alexghacker@yahoo.com",
@@ -692,6 +703,10 @@
    "bpetering@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "bpetering@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "bpetering"
+   ],
+   "brad@b7j0c.org" : [
+      "brad@b7j0c.org",
+      "Brad Clawsie"
    ],
    "brandon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "brandon@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -1358,6 +1373,10 @@
       "email@froggs.de",
       "Tobias Leich"
    ],
+   "emmanuel.rodriguez@gmail.com" : [
+      "emmanuel.rodriguez@gmail.com",
+      "Emmanuel Rodriguez"
+   ],
    "eric.hodges@gmail.com" : [
       "eric.hodges@gmail.com",
       "Eric Hodges"
@@ -1899,6 +1918,10 @@
    "jimmy@ubuntu.ubuntu-domain" : [
       "jimmy.zhuo@weststarinc.co"
    ],
+   "jjmerelo@gmail.com" : [
+      "jjmerelo@gmail.com",
+      "JJ Merelo"
+   ],
    "jjuran@metamage.com" : [
       "jjuran@metamage.com",
       "Josh Juran"
@@ -2007,6 +2030,10 @@
    "juerd@convolution.nl" : [
       "juerd@convolution.nl",
       "Juerd"
+   ],
+   "juerd@tnx.nl" : [
+      "juerd@tnx.nl",
+      "Juerd Waalboer"
    ],
    "julian.notfound@gmail.com" : [
       "julian.notfound@gmail.com",
@@ -2459,6 +2486,10 @@
       "mattc@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "mattc"
    ],
+   "matthew.king@monnsta.net" : [
+      "matthew.king@monnsta.net",
+      "Matthew King"
+   ],
    "matthew@matthew-walton.co.uk" : [
       "matthew@matthew-walton.co.uk",
       "Matthew Walton"
@@ -2679,6 +2710,14 @@
       "naesten@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "naesten"
    ],
+   "nanis@cpan.org" : [
+      "nanis@cpan.org",
+      "A. Sinan Unur"
+   ],
+   "naoum88@gmail.com" : [
+      "naoum88@gmail.com",
+      "Naoum Hankache"
+   ],
    "nastavs@gmail.com" : [
       "nastavs@gmail.com",
       "isBEKaml"
@@ -2783,6 +2822,10 @@
    "nwc10@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "nwc10@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "nwc10"
+   ],
+   "nxadm@users.noreply.github.com" : [
+      "nxadm@users.noreply.github.com",
+      "nxadm"
    ],
    "obra@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "obra@c213334d-75ef-0310-aa23-eaa082d1ae64",
@@ -2923,6 +2966,10 @@
    "perlpilot@pobox.com" : [
       "perlpilot@pobox.com",
       "Jonathan Scott Duff"
+   ],
+   "perrettdl@googlemail.com" : [
+      "perrettdl@googlemail.com",
+      "Daniel Perrett"
    ],
    "peschwa@gmail.com" : [
       "peschwa@gmail.com",
@@ -3901,6 +3948,10 @@
       "vishalrsoni@gmail.com",
       "Vishal Soni"
    ],
+   "vito.perleone+github@gmail.com" : [
+      "vito.perleone+github@gmail.com",
+      "Don Vito Perleone"
+   ],
    "vkon@c213334d-75ef-0310-aa23-eaa082d1ae64" : [
       "vkon@c213334d-75ef-0310-aa23-eaa082d1ae64",
       "vkon"
@@ -3912,6 +3963,10 @@
    "vmax0770@gmail.com" : [
       "vmax0770@gmail.com",
       "vmax"
+   ],
+   "vytas.dauksa@smoothwall.net" : [
+      "vytas.dauksa@smoothwall.net",
+      "Vytas Dauksa"
    ],
    "vz-github@zeitlins.org" : [
       "vz-github@zeitlins.org",
