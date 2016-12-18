@@ -29,15 +29,18 @@ my $plus_data_def_dir = $s->script_rel_fpath('data-def-plus');
 
 if ( $do_uploads ) {
 	# maql - base
-	$s->run_maql_for_dataset(
-		dataset => [ @datanames ],
-		maql_dir => $base_data_def_dir,
-	);
-	# maql - plus
-	$s->run_maql_for_dataset(
-		dataset => [ @datanames_plus ],
-		maql_dir => $plus_data_def_dir,
-	);
+	foreach my $ds_base_name ( @datanames ) {
+		$s->run_maql_for_dataset(
+			dataset => $ds_base_name,
+			maql_dir => $base_data_def_dir,
+		);
+	}
+	foreach my $ds_base_name ( @datanames_plus ) {
+		$s->run_maql_for_dataset(
+			dataset => $ds_base_name,
+			maql_dir => $plus_data_def_dir,
+		);
+	}
 }
 
 # synchronize - delete all data
