@@ -167,6 +167,7 @@ sub process {
 	);
 
 	my $roastdata_csv = $repo_obj->run('show', 'HEAD:'.$roastdata_fpath );
+	$self->dump( 'roast-data csv', $roastdata_csv ) if $self->{vl} >= 10;
 	my ( $header, $raw_data ) = $self->parse_csv( $roastdata_csv );
 	$self->dump( 'roast-data header', $header ) if $self->{vl} >= 9;
 	$self->dump( 'roast-data raw data', $raw_data ) if $self->{vl} >= 9;
@@ -174,9 +175,9 @@ sub process {
 	my $projects = $self->projects_obj->all_projects_struct();
 
 	my $short2full_roast = $self->get_short_to_full_sha1( $projects, 'roast' );
-	$self->dump( 'short2full_roast', $short2full_roast ) if $self->{vl} >= 9;
+	$self->dump( 'short2full_roast', $short2full_roast ) if $self->{vl} >= 10;
 	my $short2full_impl = $self->get_short_to_full_sha1( $projects, $self->impl_aliases );
-	$self->dump( 'short2full_impl', $short2full_impl ) if $self->{vl} >= 9;
+	$self->dump( 'short2full_impl', $short2full_impl ) if $self->{vl} >= 10;
 
 	# todo
 	my $sha1_roast_fallback = {};
@@ -192,10 +193,14 @@ sub process {
 		'pugs' => 'Pugs.hs',
 	};
 
+my $line_num = 0;
 	foreach my $row ( @$raw_data ) {
+		$line_num++;
 		my $flavour_raw = $row->[0];
+		next unless $flavour_raw;
 		if ( not exists $clean_flavour->{$flavour_raw} ) {
-			croak "Unknown project flavour: $flavour_raw\n";
+			$self->dump( 'line data', $row ) if $self->{vl} >= 5;
+			croak "Unknown project flavour '$flavour_raw' (on line num $line_num)\n";
 		} elsif ( not defined $clean_flavour->{$flavour_raw} ) {
 			next;
 		}
