@@ -181,6 +181,7 @@ sub process_and_save_csv {
 			return 0;
 		}
 
+		print "Processing project '$project_alias'.\n" if $self->{vl} >= 5;
 		my $branch = $projects->{$project_alias}{branch} // 'master';
 		my $base_repo_obj = $self->git_repo_obj(
 			$project_alias,
