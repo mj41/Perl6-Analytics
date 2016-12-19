@@ -42,7 +42,7 @@ foreach my $email ( sort { cmp_str($a) cmp cmp_str($b) } keys %$emails ) {
         $name = $emails->{$norm_email}[1];
         next;
     }
-    my $cmp_email = cmp_str( $email ); 
+    my $cmp_email = cmp_str( $email );
     print qq/"$email" "$norm_email" "$name" (cmp_email: "$cmp_email")\n/;
 }
 print "\n";
@@ -50,7 +50,7 @@ print "\n";
 print "Sorted by lowercase names:\n";
 foreach my $name( sort { cmp_str($a) cmp cmp_str($b) } keys %$name_to_email ) {
     my $email = $name_to_email->{$name};
-    my $cmp_name = cmp_str( $name ); 
+    my $cmp_name = cmp_str( $name );
     print qq/"$name" "$email" (cmd_name: "$cmp_name")\n/;
 
 }
